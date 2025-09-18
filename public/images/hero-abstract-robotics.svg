@@ -1,0 +1,167 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract AI + Robotics + Manufacturing">
+  <!-- =========================
+       THEME (edit to match brand)
+       ========================= -->
+  <defs>
+    <style><![CDATA[
+      :root {
+        --blue: #2563EB;      /* 主蓝：匹配 text-blue-600 */
+        --blue-soft: #93C5FD; /* 浅蓝 */
+        --blue-tint: #BFDBFE; /* 更浅蓝 */
+        --ink1: #111827;      /* 深灰蓝 */
+        --ink2: #374151;      /* 次深灰蓝 */
+        --ink3: #4B5563;      /* 中灰 */
+        --bg-hi: #F3F4F6;     /* 背景上 */
+        --bg-lo: #E5E7EB;     /* 背景下 */
+        --violet: #7C3AED;    /* 紫点缀 */
+        --green: #10B981;     /* 绿点缀 */
+      }
+    ]]></style>
+
+    <!-- 背景渐变 -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--bg-hi)"/>
+      <stop offset="1" stop-color="var(--bg-lo)"/>
+    </linearGradient>
+
+    <!-- 淡紫 mesh 光晕 -->
+    <radialGradient id="mesh" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(710 360) rotate(90) scale(480 760)">
+      <stop offset="0" stop-color="var(--violet)" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="var(--violet)" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 线路渐变（蓝系） -->
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--blue-soft)"/>
+      <stop offset="1" stop-color="var(--blue)"/>
+    </linearGradient>
+
+    <!-- 金属渐变（机械臂/设备） -->
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="var(--ink2)"/>
+      <stop offset="1" stop-color="var(--ink3)"/>
+    </linearGradient>
+
+    <!-- 柔光滤镜 -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- 细线发光 -->
+    <filter id="fineGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#mesh)"/>
+
+  <!-- 轻纹理 -->
+  <g opacity="0.10">
+    <path d="M0 610 L1280 330" stroke="#E0E7FF" stroke-width="1"/>
+    <path d="M0 660 L1280 380" stroke="#E0E7FF" stroke-width="1"/>
+    <path d="M0 710 L1280 430" stroke="#E0E7FF" stroke-width="1"/>
+  </g>
+
+  <!-- 线网球体（左中） -->
+  <g transform="translate(520,360)">
+    <circle r="210" fill="none" stroke="var(--blue-tint)" stroke-width="1.1"/>
+    <circle r="168" fill="none" stroke="var(--blue-tint)" stroke-width="1" opacity="0.9"/>
+    <circle r="126" fill="none" stroke="var(--blue-tint)" stroke-width="1" opacity="0.85"/>
+
+    <!-- 纬线 -->
+    <g stroke="url(#wire)" stroke-width="1" filter="url(#fineGlow)">
+      <ellipse rx="210" ry="178"/>
+      <ellipse rx="210" ry="132"/>
+      <ellipse rx="210" ry="88"/>
+      <ellipse rx="210" ry="44"/>
+    </g>
+    <!-- 经线 -->
+    <g stroke="url(#wire)" stroke-width="1" filter="url(#fineGlow)">
+      <ellipse rx="180" ry="210"/>
+      <ellipse rx="154" ry="210" transform="rotate(22)"/>
+      <ellipse rx="154" ry="210" transform="rotate(-22)"/>
+      <ellipse rx="120" ry="210" transform="rotate(44)"/>
+      <ellipse rx="120" ry="210" transform="rotate(-44)"/>
+    </g>
+
+    <!-- 连接节点 -->
+    <g filter="url(#softGlow)">
+      <circle cx="-92" cy="-62" r="5.5" fill="var(--blue)"/>
+      <circle cx="58"  cy="46"  r="5.5" fill="var(--blue)"/>
+      <circle cx="118" cy="-80" r="5.5" fill="var(--blue)"/>
+      <circle cx="-138" cy="90" r="5.5" fill="var(--blue)"/>
+      <circle cx="0"   cy="0"   r="5"   fill="var(--green)"/>
+    </g>
+  </g>
+
+  <!-- 抽象数据/供应链线路（从左到右 & 从球体到右侧） -->
+  <g stroke="url(#wire)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#fineGlow)" opacity="0.95">
+    <!-- 左侧输入 -->
+    <path d="M80 330 h220 a20 20 0 0 1 20 20 v20 h100"/>
+    <path d="M60 380 h260 a18 18 0 0 0 18 -18 v-24 h140"/>
+    <path d="M50 430 h290 a22 22 0 0 0 22 -22 v-26 h170"/>
+    <!-- 从地球延展到右侧产线 -->
+    <path d="M730 360 H 860 a16 16 0 0 1 16 16 v22 h130 a16 16 0 0 0 16 -16 v-12 h160"/>
+    <path d="M710 320 H 900 v-18 a14 14 0 0 1 14 -14 h160"/>
+    <path d="M710 400 H 920 v22 a14 14 0 0 0 14 14 h140"/>
+  </g>
+
+  <!-- 抽象工厂与产线（右下淡化，不喧宾夺主） -->
+  <g transform="translate(780,480)" opacity="0.85">
+    <!-- 传送带底座 -->
+    <rect x="0" y="130" width="320" height="26" rx="10" fill="var(--ink2)"/>
+    <!-- 传送带滚轮 -->
+    <g fill="#9CA3AF">
+      <circle cx="40"  cy="155" r="6"/>
+      <circle cx="120" cy="155" r="6"/>
+      <circle cx="200" cy="155" r="6"/>
+      <circle cx="280" cy="155" r="6"/>
+    </g>
+    <!-- 工厂抽象楼体 -->
+    <g fill="var(--ink3)">
+      <rect x="-110" y="80" width="70" height="76" rx="2"/>
+      <rect x="-30"  y="60" width="60" height="96" rx="2"/>
+      <rect x="330"  y="30" width="56" height="126" rx="2"/>
+      <!-- 烟囱 -->
+      <rect x="354" y="-10" width="14" height="40" rx="2" fill="var(--ink2)"/>
+      <rect x="372" y="0"   width="10" height="30" rx="2" fill="var(--ink2)"/>
+    </g>
+  </g>
+
+  <!-- 抽象机器人机械臂（右中，几何化） -->
+  <g transform="translate(980,320)">
+    <!-- 立柱 -->
+    <rect x="-40" y="40" width="24" height="110" rx="8" fill="url(#metal)"/>
+    <!-- 肩关节 -->
+    <circle cx="-28" cy="40" r="12" fill="var(--blue)"/>
+    <!-- 上臂（折线） -->
+    <path d="M-28 40 L 36 10 L 46 24 L -12 54 Z" fill="var(--ink3)"/>
+    <!-- 肘关节 -->
+    <circle cx="42" cy="18" r="10" fill="var(--violet)"/>
+    <!-- 前臂 -->
+    <path d="M42 18 L 108 38 L 102 54 L 34 30 Z" fill="var(--ink2)"/>
+    <!-- 腕关节 -->
+    <circle cx="106" cy="46" r="9" fill="var(--blue)"/>
+    <!-- 夹爪（极简） -->
+    <path d="M106 46 l26 -8 l6 10 l-26 10 Z" fill="var(--ink1)"/>
+    <path d="M136 38 l12 -6 l8 14 l-12 6 Z" fill="var(--ink1)"/>
+
+    <!-- 电缆/信号光 -->
+    <path d="M-40 78 C -66 92, -86 112, -108 122" stroke="var(--violet)" stroke-width="2.6" opacity="0.55" fill="none" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- 右上角抽象模块图标（系统/插件的隐喻） -->
+  <g transform="translate(1120,140)" opacity="0.9" filter="url(#softGlow)">
+    <circle cx="0" cy="0" r="8" fill="var(--green)"/>
+    <rect x="30" y="-8" width="16" height="16" rx="3.5" fill="var(--blue)"/>
+    <path d="M64 -6 L80 10 L64 10 Z" fill="var(--violet)"/>
+  </g>
+
+  <!-- 留出文案安全区（不可见，开发可删） -->
+  <rect x="160" y="160" width="520" height="300" rx="12" fill="#000" opacity="0"/>
+</svg>

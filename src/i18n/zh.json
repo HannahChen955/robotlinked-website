@@ -1,0 +1,1006 @@
+{
+  "common": {
+    "book_call": "预约咨询",
+    "email_service": "service@robotlinked.com",
+    "email_jason": "jason.zheng@robotlinked.com",
+    "learn_more": "了解更多",
+    "get_started": "开始合作",
+    "contact_us": "联系我们",
+    "view_services": "查看服务",
+    "view_all_cases": "查看所有案例",
+    "copyright": "© {{year}} RobotLinked. 保留所有权利。",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "获取关于我们AI硬件和机器人制造服务的常见问题解答",
+    "talent": {
+      "title": "人才服务",
+      "q1": "你们多快能为AI硬件岗位提供合格候选人？",
+      "a1": "大多数岗位我们在48小时内交付首批候选人。我们在中国AI硬件生态系统中的广泛网络使我们能够快速识别和筛选具有正确技术背景和经验的候选人。",
+      "q2": "你们通常为AI硬件公司填补哪些类型的岗位？",
+      "a2": "我们专注于制造、供应链和工程岗位，包括：硬件工程师、制造工程师、供应链经理、质量工程师、生产经理和具有AI/机器人经验的采购专家。",
+      "q3": "人员到位后你们提供持续支持吗？",
+      "a3": "是的，我们提供3个月的就职保障和持续的HR支持以确保成功整合。这包括绩效检查、文化适应支持和必要时的即时替换。",
+      "q4": "你们如何确保候选人既懂AI技术又懂制造？",
+      "a4": "我们的候选人都经过AI/机器人技术知识和实际制造经验的预筛选。我们使用专门为转向批量生产的AI硬件公司设计的能力框架。"
+    },
+    "solutions": {
+      "title": "供应链解决方案",
+      "q1": "你们的量产可行性评估包括什么？",
+      "a1": "我们的10天评估涵盖：元器件采购分析、供应商能力评估、成本建模、时间线预测、风险评估，以及从试产到批量生产转换的详细建议。",
+      "q2": "你们如何帮助AI硬件进行元器件采购？",
+      "a2": "我们利用供应商网络采购关键元器件，包括芯片、传感器、电机和专用零件。我们的团队在整个采购过程中提供供应商验证、成本谈判和质量保证。",
+      "q3": "在生产爬坡期间你们提供什么支持？",
+      "a3": "我们提供现场工程支持、生产线优化、质量控制实施、供应商关系管理，以及在关键爬坡阶段的实时问题解决。"
+    },
+    "general": {
+      "title": "一般问题",
+      "q1": "你们推荐的AI硬件制造策略是什么？",
+      "a1": "我们建议采用战略性多地域制造方式来最小化成本。中国非常适合产品研发阶段，因为有丰富的配套资源和生态系统，能够实现快速原型制作和迭代。产品成熟后，公司可以根据成本考虑、市场准入或供应链需求将生产迁移到其他地区。这种分阶段的方法既优化了开发速度，也确保了长期制造经济性。",
+      "q2": "你们如何处理跨文化和语言障碍？",
+      "a2": "我们的双语团队通过标准化流程、翻译文档和文化培训来弥合沟通差距。我们确保全球团队与中国本地供应商/合作伙伴之间的顺畅协调。",
+      "q3": "RobotLinked与传统咨询公司有什么不同？",
+      "a3": "我们专门从事AI硬件和机器人，具有深厚的中国制造专业知识。我们的人才+解决方案组合方法确保您在实施经过验证的制造策略的同时建立正确的团队。",
+      "q4": "由于关税问题，你们是否支持在中国以外的地方生产？",
+      "a4": "是的，当关税或地缘政治因素成为考虑因素时，我们可以帮助寻找替代制造地点。我们会寻找在东南亚、印度或墨西哥等地区具有相关能力的供应商，并提供现场资源以确保质量和协调。我们的全球网络使我们能够无论在哪个地点都保持同样的制造卓越水平。"
+    },
+    "contact": {
+      "title": "还有其他问题？",
+      "description": "我们的团队准备为您的具体需求提供个性化答案和解决方案。",
+      "cta": "联系我们的专家"
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "core_services": "核心服务",
+    "talent": "人才服务",
+    "solutions": "解决方案",
+    "clients": "客户画像",
+    "advantages": "我们的优势",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "faq": "常见问题",
+    "resources": "资源中心"
+  },
+  "home": {
+    "hero": {
+      "title": "帮助全球 AI 硬件与机器人公司实现'中国+'制造成功量产",
+      "subtitle": "我们尤其擅长支持从软件/AI转向硬件的团队，快速跨越供应链与量产爬坡的学习曲线。也服务消费电子、医疗器械等其他领域。",
+      "services_intro": "我们提供两大核心服务",
+      "service_talent": "人才服务",
+      "service_talent_desc": "在指定区域搭建制造与供应链核心团队",
+      "service_solutions": "方案服务",
+      "service_solutions_desc": "推动供应链落地与量产爬坡（Pilot → 量产交付）",
+      "cta_primary": "获取评估",
+      "cta_secondary": "预约用人需求",
+      "badge": "全球制造网络合作伙伴",
+      "tag1": "AI-first",
+      "tag2": "Robotics",
+      "tag3": "China+",
+      "benefit1": "15+ 年跨国大厂供应链经验",
+      "benefit2": "90 天快速团队搭建",
+      "benefit3": "端到端量产支持",
+      "benefit4": "本土化深度资源",
+      "stat1": "成功交付项目",
+      "stat2": "年制造经验"
+    },
+    "outcomes": {
+      "title": "交付成果",
+      "subtitle": "数据说话，结果导向",
+      "metric1": "首批候选交付",
+      "metric1_desc": "初始人才管道建立和筛选",
+      "metric2": "核心团队配置完成",
+      "metric2_desc": "完整团队招聘和入职",
+      "metric3": "量产可行性评估",
+      "metric3_desc": "技术和供应链评估",
+      "weeks": "周",
+      "days": "天"
+    },
+    "services": {
+      "title": "两大核心服务",
+      "subtitle": "从人才到方案，一站式解决中国制造挑战",
+      "talent_title": "人才服务",
+      "talent_desc": "制造与供应链团队搭建",
+      "talent_advantage1": "行业洞察驱动匹配",
+      "talent_deliverable1": "候选人短名单 + 匹配报告",
+      "talent_detail1": "技能/项目经历/风险点与推荐理由",
+      "talent_advantage2": "广泛人脉快速直达",
+      "talent_deliverable2": "稀缺人才直通池",
+      "talent_detail2": "优先触达被动候选人 + 关键推荐/背调要点",
+      "talent_advantage3": "组织就绪一揽子",
+      "talent_deliverable3": "岗位与组织落地包",
+      "talent_detail3": "JD澄清、能力模型、薪酬带、面试评分表、Offer与入职清单、90天跟踪",
+      "solutions_title": "方案服务",
+      "solutions_desc": "供应链落地与量产爬坡",
+      "solutions_advantage1": "项目制定制方案",
+      "solutions_deliverable1": "落地路线图",
+      "solutions_detail1": "里程碑、责任矩阵、风险与成本/周期测算",
+      "solutions_advantage2": "跨国协同与对齐",
+      "solutions_deliverable2": "双语协同包",
+      "solutions_detail2": "技术资料包、对齐纪要、变更控制与周报机制",
+      "solutions_advantage3": "一站式项目管理",
+      "solutions_deliverable3": "从试产到量产的Ramp计划",
+      "solutions_detail3": "供应商/工厂 shortlist、生产与 ramp 计划、质量与成本指标、交付风险管控"
+    },
+    "why_us": {
+      "title": "为什么选择我们",
+      "subtitle": "六大核心优势，确保您的项目成功落地",
+      "expertise_title": "深度行业专长",
+      "expertise_desc": "15+ 年跨国企业供应链管理经验，专注 AI 硬件与机器人制造领域，深刻理解行业特点与挑战。",
+      "track_record_title": "验证成功记录",
+      "track_record_desc": "已助力多家全球领先企业在中国成功建立制造能力，从初创到独角兽，覆盖全产业链。",
+      "support_title": "端到端支持",
+      "support_desc": "从人才招聘到量产落地，提供完整的解决方案，确保项目各个环节都有专业支持。",
+      "cultural_title": "文化桥梁优势",
+      "cultural_desc": "既了解国际企业标准与流程，又深谙中国本地执行与资源网络，完美连接两端。",
+      "quality_title": "质量保障体系",
+      "quality_desc": "建立完整的质量管控体系，从供应商选择到生产监控，确保产品质量达到国际标准。",
+      "speed_title": "快速交付能力",
+      "speed_desc": "利用丰富的资源网络和成熟的执行流程，显著缩短从规划到量产的时间周期。"
+    },
+    "clients": {
+      "title": "我们解决的六大典型挑战",
+      "subtitle": "无论是初创公司还是成熟企业，在制造与团队建设过程中，你可能会遇到这些挑战。我们专注于帮你解决。不论是按您的要求招聘相应职位员工，还是提供完整的人员+方案外包方案，我们都可以量身定制。",
+      "challenge1": {
+        "title": "从 AI 到硬件的\"第一公里\"",
+        "problem": "AI 公司转型做硬件，缺乏供应链与研发落地经验，学习曲线陡峭。",
+        "solution": "引入相关技能的工程师(PM/ME/EE/PD ect.)，加速硬件落地；制定清晰的产品研发流程和管理体系，确保研发与量产无缝衔接。",
+        "link": "查看我们如何解决 →"
+      },
+      "challenge2": {
+        "title": "团队组建慢，岗位画像不清",
+        "problem": "JD 模糊、岗位能力模型缺失，导致团队搭建周期过长。",
+        "solution": "岗位澄清 + 候选人短名单，快速推动招聘进程；提供组织画像和能力模型，帮助企业明确岗位需求。",
+        "link": "查看我们如何解决 →"
+      },
+      "challenge3": {
+        "title": "关键零部件不稳定",
+        "problem": "电机、传感器等核心部件验证不足，容易导致规格不清或良率不可控。",
+        "solution": "引入资深 SQE/采购专家，强化供应商质量与合格性把控；制定系统化的多维度验证计划，确保规格定义清晰。",
+        "link": "查看我们如何解决 →"
+      },
+      "challenge4": {
+        "title": "问题解决延迟，错过最佳时机",
+        "problem": "在产线上出现的实际问题，如果缺乏现场支持，往往得不到及时和正确的关注。远程沟通效率低，工厂/供应商也难以完全站在客户角度，导致问题被延误甚至被忽视。",
+        "solution": "派驻现场 PM/工程师，第一时间发现并推动问题解决；建立高效的问题跟踪与反馈机制，确保信息闭环与责任明确。",
+        "link": "查看我们如何解决 →"
+      },
+      "challenge5": {
+        "title": "交付与成本双重压力",
+        "problem": "交付期限紧迫，同时要求严格控制成本，企业常陷入两难。",
+        "solution": "引入成本工程师/供应链经理，优化采购与排产；建立成本与交付的监控看板，透明化指标与风险。",
+        "link": "查看我们如何解决 →"
+      },
+      "challenge6": {
+        "title": "跨区协同与合规风险",
+        "problem": "海外团队与中国供应链沟通不畅，本地合规要求复杂，增加了项目风险。",
+        "solution": "双语 PM/HR 保障跨区沟通与合规落实；提供合规清单和跨区文档包，标准化流程与责任划分。",
+        "link": "查看我们如何解决 →"
+      },
+      "problem_label": "客户困境",
+      "solution_label": "我们能帮你",
+      "tier1": "A/B 轮机器人与 AI 硬件初创",
+      "tier1_desc": "6-18 个月内进入量产窗口期，需要快速建立中国制造能力的高成长企业。",
+      "tier1_feature1": "优先级支持与专属服务",
+      "tier1_feature2": "端到端项目管理",
+      "tier1_feature3": "风险控制与质量保障",
+      "tier2": "AI 服务器/加速卡/模组厂商",
+      "tier2_desc": "需要快速扩展制造能力，寻求可靠本地合作伙伴的技术企业。",
+      "tier2_feature1": "供应链优化与成本控制",
+      "tier2_feature2": "产能规划与扩展支持",
+      "tier3": "传统硬件公司新开 AI/机器人产品线",
+      "tier3_desc": "进入新兴领域，需要专业团队支持新业务发展的传统制造企业。",
+      "tier3_feature1": "新业务线孵化支持",
+      "tier3_feature2": "团队培训与能力建设"
+    },
+    "process": {
+      "title": "服务流程",
+      "subtitle": "标准化流程确保项目成功交付",
+      "talent_title": "人才服务流程",
+      "solutions_title": "方案服务流程",
+      "talent_step1": "岗位澄清",
+      "talent_step1_title": "需求分析",
+      "talent_step2": "候选池构建",
+      "talent_step2_title": "人才搜寻",
+      "talent_step3": "精准匹配",
+      "talent_step3_title": "精准匹配",
+      "talent_step4": "评估筛选",
+      "talent_step4_title": "面试评估",
+      "talent_step5": "Offer 协商",
+      "talent_step5_title": "薪资谈判",
+      "talent_step6": "入职跟踪",
+      "talent_step6_title": "入职支持",
+      "solutions_step1": "Pilot 试产",
+      "solutions_step1_title": "试产准备",
+      "solutions_step2": "EVT 工程验证",
+      "solutions_step2_title": "工程验证",
+      "solutions_step3": "DVT 设计验证",
+      "solutions_step3_title": "设计验证",
+      "solutions_step4": "PVT 生产验证",
+      "solutions_step4_title": "生产验证",
+      "solutions_step5": "MP 量产",
+      "solutions_step5_title": "量产交付"
+    },
+    "process": {
+      "title": "服务流程",
+      "subtitle": "标准化流程确保项目成功交付",
+      "talent_title": "人才服务流程",
+      "solutions_title": "方案服务流程"
+    },
+    "cta": {
+      "title": "准备开始您的中国制造之旅？",
+      "subtitle": "让我们帮助您在中国建立世界级的制造能力，加速产品上市进程。",
+      "button": "预约 20 分钟咨询",
+      "learn_more": "了解更多"
+    }
+  },
+  "talent": {
+    "title": "专注于 AI 硬件与机器人领域的猎头服务",
+    "subtitle": "从研发到量产，我们为您找到既懂国际标准、又能本地落地的人才",
+    "description": "帮助全球 AI 硬件与机器人公司快速找到最合适的中国本地人才，确保团队既符合国际标准，又能高效落地。",
+    "cta": {
+      "primary": "预约咨询",
+      "secondary": "岗位参考"
+    },
+    "pain_points": {
+      "title": "我们解决最难的招聘挑战",
+      "point1": {
+        "title": "难找人才",
+        "desc": "我们有行业经验和人脉，懂人也知道这些人在哪里"
+      },
+      "point2": {
+        "title": "紧急需求",
+        "desc": "关键岗位最快 48 小时内提供候选人短名单"
+      },
+      "point3": {
+        "title": "本地执行",
+        "desc": "能够连接全球总部标准与中国运营的人才"
+      },
+      "point4": {
+        "title": "风险降低",
+        "desc": "前期招聘时做充分评估和预判，通过沟通和网络推荐稳定有意愿的候选人"
+      }
+    },
+    "process_new": {
+      "title": "我们的服务流程",
+      "step1": {
+        "title": "岗位需求澄清",
+        "desc": "深入理解您的团队需求和企业文化"
+      },
+      "step2": {
+        "title": "AI 精准匹配",
+        "desc": "利用 AI 技术进行精准候选人匹配"
+      },
+      "step3": {
+        "title": "人才市场地图与报告",
+        "desc": "详细的候选人评估报告"
+      },
+      "step4": {
+        "title": "薪酬谈判支持",
+        "desc": "协助薪酬和条件谈判"
+      },
+      "step5": {
+        "title": "入职后跟进",
+        "desc": "30/60/90 天跟进确保顺利团队融入"
+      }
+    },
+    "core_roles": {
+      "title": "我们的专长岗位",
+      "manufacturing": {
+        "title": "制造与 NPI",
+        "roles": ["工艺工程师", "结构工程师", "电子工程师", "TPM/EPM"]
+      },
+      "supply_chain": {
+        "title": "供应链",
+        "roles": ["供应链经理", "运营经理", "物流经理", "成本工程师"]
+      },
+      "quality": {
+        "title": "质量与测试",
+        "roles": ["SQE", "质量经理", "测试工程师", "合规经理"]
+      },
+      "leadership": {
+        "title": "领导团队",
+        "roles": ["中国区总经理", "品质总监", "运营总监", "PD/EE总监"]
+      }
+    },
+    "credibility": {
+      "title": "AI 硬件公司信赖的合作伙伴",
+      "metrics": {
+        "metric1": "48 小时候选人短名单",
+        "metric2": "90% 候选人一年后留存率",
+        "metric3": "15+ 年行业经验"
+      },
+      "team_desc": "我们的顾问来自全球硬件领军企业，深谙 AI 与制造双重领域。"
+    },
+    "roles": {
+      "title": "典型岗位",
+      "group1_title": "制造/工艺/NPI",
+      "group1_roles": [
+        "Head of Manufacturing (China)",
+        "NPI/PE/ME 工程师",
+        "TE/测试工程师",
+        "质量（SQE/SQE-电机&线束）",
+        "产线/工厂 PM",
+        "项目经理"
+      ],
+      "group2_title": "供应链/采购/交付",
+      "group2_roles": [
+        "Supply Chain Manager/Buyer",
+        "关键件采购（电机/减速机/传感器/线束/控制器）",
+        "计划/交付",
+        "成本工程师"
+      ]
+    },
+    "process": {
+      "title": "服务流程",
+      "step1": {
+        "title": "岗位澄清",
+        "desc": "需求访谈+JD 结构化"
+      },
+      "step2": {
+        "title": "阶段匹配",
+        "desc": "项目阶段/TRL/NPI Gate → 能力画像"
+      },
+      "step3": {
+        "title": "搜寻与AI匹配",
+        "desc": "人才库+语义匹配"
+      },
+      "step4": {
+        "title": "候选人短名单与评估",
+        "desc": "48h 首批交付"
+      },
+      "step5": {
+        "title": "Offer & 入职",
+        "desc": "30/60/90 天跟踪"
+      }
+    },
+    "engagement": {
+      "title": "灵活的合作模式",
+      "model1": {
+        "title": "成功付费",
+        "desc": "成功入职后付费",
+        "detail": "适合单个岗位招聘"
+      },
+      "model2": {
+        "title": "预付费用",
+        "desc": "专属顾问，持续输送",
+        "detail": "适合持续招聘需求"
+      },
+      "model3": {
+        "title": "项目制",
+        "desc": "针对项目或团队扩建定制",
+        "detail": "适合 NPI 扩建或大规模招聘"
+      }
+    },
+    "final_cta": {
+      "title": "准备好组建您的团队了吗？",
+      "primary_btn": "预约免费咨询",
+      "secondary_btn": "下载示例报告"
+    }
+  },
+  "services": {
+    "title": "服务",
+    "subtitle": "人才服务 + 供应链解决方案",
+    "talent": {
+      "audience": {
+        "title": "服务对象",
+        "desc": "AI 硬件与机器人公司制造团队搭建"
+      },
+      "scenario1": {
+        "title": "情形1：初创公司团队搭建",
+        "desc": "从 0 到 1 建立中国制造团队"
+      },
+      "scenario2": {
+        "title": "情形2：扩张期人才补强",
+        "desc": "快速补充关键制造人才"
+      },
+      "scenario3": {
+        "title": "情形3：专业技能提升",
+        "desc": "引入高级专家提升团队能力"
+      },
+      "deliverables": {
+        "title": "交付成果",
+        "category1": "人才推荐与匹配",
+        "item1": "深度背景调研报告",
+        "item2": "技能评估与文化匹配",
+        "item3": "薪资基准与谈判支持",
+        "category2": "入职后跟踪服务",
+        "item4": "30/60/90 天适应性评估",
+        "item5": "团队融合指导",
+        "item6": "绩效提升建议"
+      },
+      "metrics": {
+        "title": "服务指标",
+        "metric1": "48h",
+        "metric1_desc": "首轮候选人推荐时间",
+        "metric2": "≥90%",
+        "metric2_desc": "候选人面试通过率",
+        "metric3": "2-4 周",
+        "metric3_desc": "典型岗位完成周期"
+      }
+    },
+    "solutions": {
+      "audience": {
+        "title": "服务对象",
+        "desc": "需要供应链落地支持的 AI 硬件与机器人公司"
+      },
+      "scenario1": {
+        "title": "情形1：Pilot 到 MP 全程支持",
+        "desc": "从试产到量产的完整服务"
+      },
+      "scenario2": {
+        "title": "情形2：Golden Line 建设",
+        "desc": "标准化产线建设与优化"
+      },
+      "scenario3": {
+        "title": "情形3：供应链风险管控",
+        "desc": "质量、成本、交期全面管理"
+      },
+      "deliverables": {
+        "title": "交付成果",
+        "category1": "项目管理与执行",
+        "item1": "详细项目计划与时间轴",
+        "item2": "风险识别与应对策略",
+        "item3": "周报与里程碑报告",
+        "category2": "质量与成本控制",
+        "item4": "良率提升行动计划",
+        "item5": "成本分析与优化建议",
+        "item6": "供应商评估与管理"
+      },
+      "metrics": {
+        "title": "服务指标",
+        "metric1": "≥95%",
+        "metric1_desc": "项目按时交付率",
+        "metric2": "15-30%",
+        "metric2_desc": "典型成本优化幅度",
+        "metric3": "24/7",
+        "metric3_desc": "项目跟踪与支持"
+      }
+    }
+  },
+  "solutions": {
+    "title": "为 AI / 硬件团队打造可信赖的中国供应链合作伙伴",
+    "subtitle": "从试产到量产，我们帮助您快速建立稳定、可控的供应链体系，减少延误与返工，保障产品顺利交付。",
+    "cta": {
+      "primary": "预约方案咨询"
+    },
+    "challenges": {
+      "title": "客户常见挑战",
+      "challenge1": {
+        "title": "缺乏本地资源和人脉",
+        "desc": "找不到合适的工厂，容易被\"坑\""
+      },
+      "challenge2": {
+        "title": "缺乏供应链管理经验",
+        "desc": "研发强，但量产环节无人把控"
+      },
+      "challenge3": {
+        "title": "试产与量产风险高",
+        "desc": "返工率高、延期风险大，可能错过融资窗口"
+      },
+      "challenge4": {
+        "title": "沟通与文化障碍",
+        "desc": "语言、时差、工作习惯差异大，信息不透明"
+      },
+      "challenge5": {
+        "title": "小批量订单优先级低",
+        "desc": "工厂缺乏投入，交付质量不稳"
+      },
+      "challenge6": {
+        "title": "成本与现金流压力",
+        "desc": "议价能力弱，成本波动大"
+      }
+    },
+    "solutions_table": {
+      "title": "我们的解决方案",
+      "problem_header": "客户痛点",
+      "solution_header": "我们的解决方案",
+      "row1": {
+        "problem": "没有供应商网络",
+        "solution": "提供 vetted 工厂 shortlist，帮忙谈判控价"
+      },
+      "row2": {
+        "problem": "缺乏量产经验",
+        "solution": "驻厂工程师团队，保障 Golden Line & 良率爬坡"
+      },
+      "row3": {
+        "problem": "风险高",
+        "solution": "阶段性质量验证 & 风险预警，缩短爬坡周期"
+      },
+      "row4": {
+        "problem": "沟通障碍",
+        "solution": "中英双语团队，做工厂与客户的桥梁"
+      },
+      "row5": {
+        "problem": "优先级低",
+        "solution": "代表客户推动工厂投入，确保项目按计划执行"
+      },
+      "row6": {
+        "problem": "成本不可控",
+        "solution": "提供 benchmark 成本模型，锁定合理价格"
+      }
+    },
+    "process": {
+      "title": "服务流程",
+      "step1": {
+        "title": "需求澄清",
+        "desc": "了解产品与阶段"
+      },
+      "step2": {
+        "title": "供应商甄选",
+        "desc": "BOM 审核 + 工厂 shortlist"
+      },
+      "step3": {
+        "title": "试产支持",
+        "desc": "小批量爬坡，良率优化"
+      },
+      "step4": {
+        "title": "Golden Line 验证",
+        "desc": "打造稳定生产线"
+      },
+      "step5": {
+        "title": "量产交付",
+        "desc": "成本 & 良率监控，保障按时出货"
+      }
+    },
+    "advantages": {
+      "title": "我们的优势",
+      "adv1": {
+        "title": "资深团队",
+        "desc": "核心成员均有 15+ 年制造业经验，曾在富士康、伟创力等顶级代工厂，以及跨国头部公司担任关键岗位"
+      },
+      "adv2": {
+        "title": "双重视角",
+        "desc": "既有甲方供应链管理经验，又有工厂一线运营经验，能真正做到 bridging，理解双方诉求"
+      },
+      "adv3": {
+        "title": "AI 驱动",
+        "desc": "我们是一群拥抱 AI 的人，在供应商筛选、数据分析、良率跟踪等环节，积极应用 AI 工具提升效率，帮助客户更快做出决策"
+      },
+      "adv4": {
+        "title": "在地合作伙伴",
+        "desc": "如果您暂时还没有计划在中国自建团队，我们可以作为值得信赖的本地执行伙伴，帮您桥接工厂与总部，确保产品稳定落地"
+      }
+    }
+  },
+  "clients": {
+    "title": "目标客户",
+    "subtitle": "精准服务三类核心客户群体",
+    "description": "我们专注服务 AI 硬件与机器人领域的创新企业，通过深度行业理解提供精准的人才与方案服务。",
+    "common_challenges": "共同挑战",
+    "our_solution": "我们的解决方案",
+    "tier1": {
+      "title": "Tier 1 - 核心客户",
+      "desc": "A/B 轮 Robotics / AI Hardware 初创",
+      "detail": "6-18 个月内进入量产窗口期",
+      "pain1": "团队从 0 到 1 搭建困难",
+      "pain2": "缺乏中国制造经验",
+      "pain3": "时间窗口紧迫，风险控制要求高",
+      "solution": "提供端到端团队搭建与量产支持服务"
+    },
+    "tier2": {
+      "title": "Tier 2",
+      "desc": "AI 服务器 / 加速卡 / 模组厂商",
+      "detail": "需要快速扩展制造能力",
+      "pain1": "产能扩展速度要求高",
+      "pain2": "成本控制压力大",
+      "pain3": "需要专业供应链管理",
+      "solution": "专注供应链优化与成本控制服务"
+    },
+    "tier3": {
+      "title": "Tier 3",
+      "desc": "传统硬件公司新开 AI/机器人产品线",
+      "detail": "需要专业团队支持新业务",
+      "pain1": "新领域专业知识不足",
+      "pain2": "团队能力需要提升",
+      "pain3": "业务模式转型困难",
+      "solution": "提供新业务线孵化与团队能力建设"
+    },
+    "cases": {
+      "title": "客户案例",
+      "subtitle": "成功服务全球领先企业的真实案例",
+      "featured": "精选案例",
+      "key_results": "关键成果"
+    },
+    "testimonials": {
+      "title": "客户评价"
+    },
+    "cta": {
+      "title": "成为我们的客户",
+      "subtitle": "加入我们成功的客户群体，开启您的中国制造之旅"
+    },
+    "pain_points": {
+      "title": "客户痛点",
+      "point1": "强研发、弱制造",
+      "point2": "缺乏中国供应链经验",
+      "point3": "需要既懂国际标准又懂本地执行的伙伴"
+    }
+  },
+  "cases": {
+    "case1": {
+      "industry": "机器人硬件",
+      "stage": "A 轮",
+      "duration": "6 个月",
+      "result1": "成功搭建 15 人制造团队",
+      "result2": "建立完整 Golden Line",
+      "result3": "实现 95% 良率目标"
+    },
+    "case2": {
+      "industry": "AI 硬件加速器",
+      "stage": "B 轮",
+      "duration": "4 个月",
+      "result1": "优化供应链成本 25%",
+      "result2": "缩短交付周期 40%"
+    },
+    "case3": {
+      "industry": "服务机器人",
+      "stage": "C 轮",
+      "duration": "8 个月",
+      "result1": "完成 Pilot 到 MP 全流程",
+      "result2": "建立自动化产线",
+      "result3": "月产能达到 5000 台"
+    },
+    "case4": {
+      "industry": "AI 边缘计算",
+      "stage": "Pre-A",
+      "duration": "3 个月",
+      "result1": "快速组建核心团队",
+      "result2": "建立供应商网络"
+    }
+  },
+  "testimonials": {
+    "quote1": "RobotLinked 帮助我们在 90 天内完成了整个制造团队的搭建，专业程度和效率远超预期。",
+    "author1": "张总",
+    "company1": "某 AI 硬件独角兽公司",
+    "quote2": "从 Pilot 到 MP，RobotLinked 的方案服务让我们避免了很多坑，成功实现了规模化量产。",
+    "author2": "李总",
+    "company2": "某服务机器人公司"
+  },
+  "advantages": {
+    "title": "我们的优势",
+    "subtitle": "五大核心竞争力",
+    "adv1": {
+      "title": "跨国大厂经验",
+      "desc": "15+ 年跨国企业供应链管理经验，熟悉国际流程与标准"
+    },
+    "adv2": {
+      "title": "本地资源网络",
+      "desc": "深度覆盖中国工厂、供应商、实验室、工程团队"
+    },
+    "adv3": {
+      "title": "高匹配度",
+      "desc": "岗位诉求与人才/方案精准对接，确保最佳匹配"
+    },
+    "adv4": {
+      "title": "双轮驱动",
+      "desc": "人才服务 + 解决方案，提供全方位支持"
+    },
+    "adv5": {
+      "title": "聚焦领域",
+      "desc": "专注 AI 硬件 × 机器人 × 中国制造"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "连接全球 AI 与机器人创新与中国制造实力",
+    "description": "我们帮助 AI 与机器人企业在中国快速落地，打造团队、供应链与可扩展的解决方案。",
+    "mission": {
+      "title": "我们的使命",
+      "desc": "我们致力于让创新者在中国成功，将全球视野与本地执行力结合，打造高效团队与可靠制造网络。"
+    },
+    "methodology": {
+      "title": "我们的方法论",
+      "people": {
+        "title": "人才优先",
+        "desc": "组建兼具国际视野与本地执行力的团队。"
+      },
+      "solutions": {
+        "title": "方案驱动",
+        "desc": "为供应链和制造环节提供定制化支持。"
+      }
+    },
+    "capabilities": {
+      "title": "我们的能力",
+      "subtitle": "中国制造端到端解决方案",
+      "cap1": {
+        "title": "人才服务",
+        "desc": "招聘、猎头、核心团队搭建。"
+      },
+      "cap2": {
+        "title": "供应链搭建",
+        "desc": "供应商筛选、工厂落地、质量体系建设。"
+      },
+      "cap3": {
+        "title": "试产与量产",
+        "desc": "从小批量试产到稳定量产。"
+      },
+      "cap4": {
+        "title": "AI 工具支持",
+        "desc": "知识库、自动化与数据洞察。"
+      }
+    },
+    "team": {
+      "title": "我们的团队",
+      "intro": "15+ 年供应链与制造管理经验。",
+      "experience": "曾在富士康、伟创力和顶尖跨国科技公司任职。兼具甲方与工厂的双重视角。",
+      "years": "年经验",
+      "projects": "项目交付",
+      "clients": "聚焦领域"
+    },
+    "compliance": {
+      "title": "合规与标准",
+      "data_security": "数据安全",
+      "data_desc": "严格的数据保护措施。",
+      "confidentiality": "保密承诺",
+      "confidentiality_desc": "全力保障客户隐私。",
+      "quality_standards": "全球标准",
+      "quality_desc": "对齐国际质量与合规体系。"
+    },
+    "download_brochure": "获取公司简介"
+  },
+  "advantages": {
+    "title": "我们的优势",
+    "subtitle": "六大核心竞争力",
+    "adv1": {
+      "title": "跨国经验",
+      "desc": "15+ 年跨国大厂背景，熟悉国际标准与流程。"
+    },
+    "adv2": {
+      "title": "本地网络",
+      "desc": "深入覆盖中国工厂、供应商和工程团队。"
+    },
+    "adv3": {
+      "title": "精准匹配",
+      "desc": "需求与方案的高契合度。"
+    },
+    "adv4": {
+      "title": "双重优势",
+      "desc": "人才 + 方案的综合支持。"
+    },
+    "adv5": {
+      "title": "聚焦领域",
+      "desc": "专注 AI 硬件与机器人在中国的发展。"
+    },
+    "adv6": {
+      "title": "AI 驱动",
+      "desc": "应用 AI 提升效率与准确性。"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "让我们开始对话",
+    "description": "请留下信息，我们会在 48 小时内回复。",
+    "form": {
+      "company": "公司/产品名称",
+      "company_placeholder": "例如：Acme Robotics / 人形机器人关节",
+      "contact": "联系人姓名",
+      "contact_placeholder": "请输入您的姓名",
+      "position": "职位",
+      "position_placeholder": "请输入您的职位",
+      "email": "邮箱",
+      "email_placeholder": "your@email.com",
+      "stage": "当前阶段",
+      "stage_placeholder": "请选择当前阶段",
+      "stage_idea": "创意阶段",
+      "stage_prototype": "原型开发",
+      "stage_testing": "测试验证",
+      "stage_scaling": "规模化生产",
+      "stage_mass": "量产阶段",
+      "stage_discuss": "待商议",
+      "services": "期望服务",
+      "services_placeholder": "请选择服务类型",
+      "services_talent": "人才服务",
+      "services_solutions": "供应链方案",
+      "services_both": "两者都需要",
+      "services_discuss": "待商议",
+      "timeline": "时间线",
+      "timeline_placeholder": "请选择时间线",
+      "timeline_urgent": "紧急（< 1个月）",
+      "timeline_1_3": "1-3个月",
+      "timeline_3_6": "3-6个月",
+      "timeline_6_plus": "6个月以上",
+      "timeline_discuss": "待商议",
+      "budget": "预算范围",
+      "budget_placeholder": "请选择预算范围",
+      "budget_10k": "< $10k",
+      "budget_10_50k": "$10k - $50k",
+      "budget_50_100k": "$50k - $100k",
+      "budget_100k_plus": "$100k+",
+      "budget_discuss": "待商议",
+      "team_size": "团队规模",
+      "team_size_placeholder": "请选择团队规模",
+      "team_size_1_10": "1-10人",
+      "team_size_11_50": "11-50人",
+      "team_size_51_200": "51-200人",
+      "team_size_200_plus": "200人以上",
+      "team_size_discuss": "待商议",
+      "location": "地点",
+      "location_placeholder": "您的所在地",
+      "product_type": "产品类型",
+      "product_type_placeholder": "请选择产品类型（可多选）",
+      "product_humanoid": "人形机器人",
+      "product_robot_arm": "机械臂",
+      "product_agv": "AGV/AMR",
+      "product_consumer": "消费电子",
+      "product_medical": "医疗器械",
+      "product_other": "其它",
+      "key_components": "关键零部件",
+      "key_components_placeholder": "请选择关键零部件（可多选）",
+      "component_motor": "电机/减速机",
+      "component_sensor": "传感器",
+      "component_controller": "控制器",
+      "component_harness": "线束",
+      "component_power": "电源/电池",
+      "component_structure": "结构件",
+      "component_testing": "测试/EOL",
+      "target_timeline": "目标时间",
+      "target_timeline_placeholder": "期望量产/关键里程碑时间",
+      "contact_preference": "联系偏好",
+      "contact_preference_placeholder": "请选择联系方式（可多选）",
+      "preference_email": "邮件",
+      "preference_phone": "电话",
+      "preference_wechat": "微信",
+      "preference_zoom": "Zoom",
+      "challenges": "更多信息",
+      "challenges_placeholder": "请简述挑战与目标，例如：DVT 良率不稳定、产能瓶颈在减速机...",
+      "upload": "上传文件",
+      "upload_placeholder": "上传 NDA / JD / 需求说明（PDF/Doc/Zip，≤20MB）",
+      "privacy_agreement": "我同意贵方的隐私政策与保密承诺",
+      "submit": "提交咨询",
+      "submitting": "提交中..."
+    },
+    "direct": {
+      "title": "直接联系",
+      "email": "邮箱",
+      "service_email": "service@robotlinked.com",
+      "jason_email": "jason.zheng@robotlinked.com",
+      "general": "常规咨询",
+      "founder": "联合创始人",
+      "response_time": "响应时间",
+      "response_promise": "我们在48小时内回复"
+    },
+    "success": {
+      "title": "Submission Successful!",
+      "message": "We've received your inquiry and will respond within 48 hours.",
+      "new_inquiry": "Submit New Inquiry"
+    },
+    "wechat": {
+      "title": "添加微信",
+      "description": "备注\\\"公司名+阶段\\\""
+    },
+    "calendar": {
+      "title": "预约咨询",
+      "desc": "直接预约 20 分钟免费咨询，快速了解我们的服务"
+    },
+    "preparation": {
+      "title": "咨询准备清单",
+      "basic": "基础信息",
+      "basic1": "公司/产品基本介绍",
+      "basic2": "当前团队规模与结构",
+      "basic3": "预期量产时间窗口",
+      "tech": "技术信息",
+      "tech1": "产品技术路线与复杂度",
+      "tech2": "关键供应链需求",
+      "tech3": "质量与成本目标",
+      "business": "商业信息",
+      "business1": "融资阶段与资金情况",
+      "business2": "市场定位与竞争格局"
+    },
+    "service_helper": {
+      "title": "服务助手",
+      "talent": {
+        "title": "人才服务助手",
+        "desc": "评估团队搭建需求，提供专业建议"
+      },
+      "solutions": {
+        "title": "方案服务助手",
+        "desc": "分析供应链挑战，制定解决方案"
+      }
+    },
+    "response_time": "48小时内回复",
+    "response_desc": "我们承诺在 48 小时内给出专业回复"
+  },
+  "resources": {
+    "title": "资源中心",
+    "subtitle": "行业洞察与实用工具",
+    "whitepaper": {
+      "title": "AI 机器人公司中国量产指南",
+      "desc": "深入了解在中国建立制造能力的关键步骤",
+      "status": "即将发布"
+    },
+    "checklist": {
+      "title": "EVT/DVT/PVT Checklist",
+      "desc": "各阶段的关键检查项和最佳实践",
+      "status": "即将发布"
+    },
+    "events": {
+      "title": "展会名录",
+      "desc": "CES、ICRA、SEMICON、Automatica 等重要展会信息",
+      "status": "即将发布"
+    }
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "subtitle": "我们重视并保护您的个人隐私",
+    "collection": {
+      "title": "信息收集",
+      "content": "我们仅收集为提供服务所必需的信息，包括您在联系表单中提供的公司信息、联系方式和业务需求。我们不会收集您的敏感个人信息，除非您主动提供且我们的服务需要。"
+    },
+    "usage": {
+      "title": "信息使用",
+      "content": "我们使用收集的信息来：(1) 回复您的咨询并提供专业服务；(2) 改进我们的服务质量；(3) 发送相关的行业信息和服务更新（需您同意）。我们不会将您的信息用于其他商业用途。"
+    },
+    "protection": {
+      "title": "信息保护",
+      "content": "我们采用行业标准的安全措施来保护您的个人信息，包括加密传输、访问控制和定期安全审查。我们限制只有需要知道的员工才能访问您的个人信息。"
+    },
+    "sharing": {
+      "title": "信息共享",
+      "content": "我们不会向第三方出售、交易或转让您的个人信息。我们可能会与可信的服务提供商共享必要信息，但仅限于提供服务所需，且他们承诺保护您的信息安全。"
+    },
+    "cookies": {
+      "title": "Cookie使用",
+      "content": "我们的网站使用Cookie来改善用户体验，包括记住您的语言偏好和分析网站使用情况。您可以通过浏览器设置控制Cookie的使用。"
+    },
+    "rights": {
+      "title": "您的权利",
+      "content": "您有权要求访问、更正或删除我们持有的您的个人信息。您也可以要求限制或反对某些数据处理活动。如需行使这些权利，请通过下方联系方式与我们联系。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "content": "如果您对本隐私政策有任何疑问或需要帮助，请随时联系我们：",
+      "address": "中国深圳市南山区"
+    },
+    "updated": "最后更新"
+  },
+  "terms": {
+    "title": "服务条款",
+    "subtitle": "请仔细阅读以下条款和条件",
+    "acceptance": {
+      "title": "条款接受",
+      "content": "通过访问和使用我们的网站及服务，您同意遵守本服务条款。如果您不同意这些条款，请不要使用我们的服务。我们保留随时修改这些条款的权利。"
+    },
+    "services": {
+      "title": "服务描述",
+      "content": "RobotLinked提供AI硬件与机器人公司制造落地的专业咨询服务，包括人才服务和解决方案服务。我们的服务范围包括团队搭建、供应链管理、制造咨询等专业服务。"
+    },
+    "obligations": {
+      "title": "用户义务",
+      "content": "您同意：(1) 提供真实、准确的信息；(2) 不滥用我们的服务；(3) 遵守适用的法律法规；(4) 尊重我们的知识产权；(5) 不进行任何可能损害我们服务或声誉的活动。"
+    },
+    "ip": {
+      "title": "知识产权",
+      "content": "我们网站上的所有内容，包括文本、图像、标志、设计等，均受知识产权法保护。未经我们明确书面许可，您不得复制、分发或以其他方式使用这些内容。"
+    },
+    "liability": {
+      "title": "责任限制",
+      "content": "在法律允许的最大范围内，我们对因使用我们的服务而产生的任何直接、间接、偶然或后果性损害不承担责任。我们的总责任不超过您为相关服务支付的费用。"
+    },
+    "termination": {
+      "title": "服务终止",
+      "content": "我们保留在任何时候暂停或终止您使用我们服务的权利，特别是在您违反这些条款的情况下。服务终止后，相关条款的某些部分将继续有效。"
+    },
+    "law": {
+      "title": "适用法律",
+      "content": "本条款受中华人民共和国法律管辖。因本条款产生的任何争议应首先通过友好协商解决，协商不成的，提交深圳市有管辖权的人民法院解决。"
+    },
+    "changes": {
+      "title": "条款变更",
+      "content": "我们可能会定期更新这些服务条款。重大变更将通过网站公告或其他适当方式通知您。继续使用我们的服务即表示您接受修订后的条款。"
+    },
+    "contact": {
+      "title": "联系信息",
+      "content": "如果您对本服务条款有任何疑问，请联系我们：",
+      "address": "中国深圳市南山区"
+    },
+    "updated": "最后更新"
+  },
+  "404": {
+    "title": "页面未找到",
+    "message": "抱歉，您访问的页面不存在。",
+    "back_home": "返回首页"
+  }
+}

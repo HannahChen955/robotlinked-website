@@ -1,0 +1,121 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract AI + Robotics + Manufacturing network">
+  <!-- =========================
+       THEME (edit to match brand)
+       ========================= -->
+  <defs>
+    <style><![CDATA[
+      :root {
+        --blue: #2563EB;      /* 主蓝 text-blue-600 */
+        --blue-soft: #93C5FD; /* 浅蓝线条 */
+        --blue-tint: #BFDBFE; /* 更浅的辅助线 */
+        --ink1: #0F172A;      /* 深灰蓝 */
+        --ink2: #334155;      /* 次深灰蓝 */
+        --bg-hi: #F3F4F6;     /* 背景上侧 */
+        --bg-lo: #E5E7EB;     /* 背景下侧 */
+        --violet: #7C3AED;    /* 紫点缀 */
+        --green: #10B981;     /* 绿点缀 */
+      }
+    ]]></style>
+
+    <!-- 背景垂直渐变 -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--bg-hi)"/>
+      <stop offset="1" stop-color="var(--bg-lo)"/>
+    </linearGradient>
+
+    <!-- 中心紫色柔光（mesh感） -->
+    <radialGradient id="mesh" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(860 430) rotate(90) scale(520 840)">
+      <stop offset="0" stop-color="var(--violet)" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="var(--violet)" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 蓝色线路渐变 -->
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--blue-soft)"/>
+      <stop offset="1" stop-color="var(--blue)"/>
+    </linearGradient>
+
+    <!-- 柔光滤镜 -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- 细光滤镜（细线发光） -->
+    <filter id="fineGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#mesh)"/>
+
+  <!-- 轻微斜向纹理（抽象层次） -->
+  <g opacity="0.12">
+    <path d="M0 760 L1600 420" stroke="#E0E7FF" stroke-width="1"/>
+    <path d="M0 820 L1600 480" stroke="#E0E7FF" stroke-width="1"/>
+    <path d="M0 880 L1600 540" stroke="#E0E7FF" stroke-width="1"/>
+  </g>
+
+  <!-- 线网球体（抽象的地球 / 网络实体） -->
+  <g transform="translate(560,450)">
+    <circle r="260" fill="none" stroke="var(--blue-tint)" stroke-width="1.2"/>
+    <circle r="210" fill="none" stroke="var(--blue-tint)" stroke-width="1" opacity="0.9"/>
+    <circle r="160" fill="none" stroke="var(--blue-tint)" stroke-width="1" opacity="0.8"/>
+
+    <!-- 纬线 -->
+    <g stroke="url(#wire)" stroke-width="1.1" filter="url(#fineGlow)">
+      <ellipse rx="260" ry="220"/>
+      <ellipse rx="260" ry="170"/>
+      <ellipse rx="260" ry="120"/>
+      <ellipse rx="260" ry="70"/>
+    </g>
+    <!-- 经线 -->
+    <g stroke="url(#wire)" stroke-width="1.1" filter="url(#fineGlow)">
+      <ellipse rx="220" ry="260"/>
+      <ellipse rx="190" ry="260" transform="rotate(22)"/>
+      <ellipse rx="190" ry="260" transform="rotate(-22)"/>
+      <ellipse rx="145" ry="260" transform="rotate(44)"/>
+      <ellipse rx="145" ry="260" transform="rotate(-44)"/>
+    </g>
+
+    <!-- 节点（少量点缀，抽象"连接点"） -->
+    <g filter="url(#softGlow)">
+      <circle cx="-120" cy="-80" r="6" fill="var(--blue)"/>
+      <circle cx="40"   cy="60"  r="6" fill="var(--blue)"/>
+      <circle cx="140"  cy="-100" r="6" fill="var(--blue)"/>
+      <circle cx="-170" cy="110" r="6" fill="var(--blue)"/>
+      <circle cx="0"    cy="0"   r="5" fill="var(--green)"/>
+    </g>
+  </g>
+
+  <!-- 抽象"数据/供应链线路" 从左向右流动（不具象，但有导向感） -->
+  <g stroke="url(#wire)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#fineGlow)" opacity="0.95">
+    <path d="M120 420 h240 a22 22 0 0 1 22 22 v20 h120"/>
+    <path d="M80  480 h280 a18 18 0 0 0 18 -18 v-24 h160"/>
+    <path d="M60  540 h320 a22 22 0 0 0 22 -22 v-26 h190"/>
+    <!-- 从球体向右延展至画面外，形成"输出/落地"的方向性 -->
+    <path d="M840 450 H 980 a16 16 0 0 1 16 16 v24 h150 a16 16 0 0 0 16 -16 v-14 H1400"/>
+    <path d="M820 410 H 1040 v-18 a14 14 0 0 1 14 -14 h160"/>
+    <path d="M820 490 H 1060 v22 a14 14 0 0 0 14 14 h140"/>
+  </g>
+
+  <!-- 右上角几何图标（抽象系统/模块） -->
+  <g transform="translate(1360,170)" opacity="0.9" filter="url(#softGlow)">
+    <circle cx="0" cy="0" r="9" fill="var(--green)"/>
+    <rect x="36" y="-9" width="18" height="18" rx="3.5" fill="var(--blue)"/>
+    <path d="M78 -7 L96 11 L78 11 Z" fill="var(--violet)"/>
+  </g>
+
+  <!-- 文案安全区提示（不可见，开发可删） -->
+  <rect x="220" y="210" width="600" height="320" rx="12" fill="#000" opacity="0"/>
+</svg>

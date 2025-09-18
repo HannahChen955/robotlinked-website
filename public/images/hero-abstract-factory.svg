@@ -1,0 +1,150 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract factory with robotic arm and engineer">
+  <!-- ============== THEME (edit to match brand) ============== -->
+  <defs>
+    <style><![CDATA[
+      :root {
+        --blue: #2563EB;      /* 主蓝：text-blue-600 */
+        --blue-soft: #93C5FD; /* 浅蓝 */
+        --ink0: #0B1220;      /* 深色轮廓 */
+        --ink1: #111827;      /* 深灰蓝 */
+        --ink2: #334155;      /* 次深灰蓝 */
+        --ink3: #4B5563;      /* 中灰蓝 */
+        --ink4: #9CA3AF;      /* 浅灰细节 */
+        --bg-hi: #F3F4F6;     /* 背景上 */
+        --bg-lo: #E5E7EB;     /* 背景下 */
+        --violet: #7C3AED;    /* 紫点缀 */
+        --green: #10B981;     /* 绿点缀 */
+      }
+    ]]></style>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--bg-hi)"/>
+      <stop offset="1" stop-color="var(--bg-lo)"/>
+    </linearGradient>
+
+    <!-- 远处冷调氛围 -->
+    <radialGradient id="roomGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(1180 200) rotate(90) scale(520 820)">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="var(--ink2)"/>
+      <stop offset="1" stop-color="var(--ink3)"/>
+    </linearGradient>
+
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--blue-soft)"/>
+      <stop offset="1" stop-color="var(--blue)"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="lineGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景房间 -->
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#roomGlow)"/>
+
+  <!-- 天花灯带（抽象） -->
+  <g stroke="#E5E7EB" stroke-width="10" opacity="0.7">
+    <line x1="760" y1="90" x2="980" y2="140"/>
+    <line x1="980" y1="140" x2="1200" y2="190"/>
+    <line x1="1200" y1="190" x2="1420" y2="240"/>
+  </g>
+
+  <!-- 透视墙体/窗框线（抽象） -->
+  <g stroke="#CBD5E1" stroke-width="2" opacity="0.6">
+    <polyline points="980,140 980,780" />
+    <polyline points="1200,190 1200,820" />
+    <polyline points="1420,240 1420,860" />
+    <line x1="640" y1="180" x2="1420" y2="360"/>
+  </g>
+
+  <!-- 产线轨道（透视） -->
+  <g stroke="url(#rail)" stroke-width="6" stroke-linecap="round" filter="url(#lineGlow)">
+    <polyline points="380,540 760,520 1140,500 1500,490"/>
+    <polyline points="360,600 740,580 1120,560 1500,550"/>
+    <!-- 侧护栏 -->
+    <polyline points="300,640 720,610 1140,590 1540,580" stroke-width="3"/>
+    <polyline points="440,500 820,480 1200,465 1540,455" stroke-width="3"/>
+  </g>
+
+  <!-- 工装与工位（抽象块面） -->
+  <g fill="var(--ink3)" opacity="0.9">
+    <rect x="690" y="520" width="36" height="18" rx="4"/>
+    <rect x="870" y="512" width="42" height="22" rx="4"/>
+    <rect x="1050" y="502" width="44" height="24" rx="4"/>
+  </g>
+
+  <!-- 机械臂（几何抽象） -->
+  <g transform="translate(520,280)">
+    <!-- 底座 -->
+    <rect x="0" y="260" width="120" height="26" rx="9" fill="var(--ink2)"/>
+    <!-- 立柱 -->
+    <rect x="44" y="160" width="18" height="102" rx="8" fill="url(#metal)"/>
+    <!-- 肩关节 -->
+    <circle cx="53" cy="160" r="12" fill="var(--blue)"/>
+    <!-- 上臂 -->
+    <path d="M53 160 L 148 126 L 156 140 L 70 172 Z" fill="var(--ink3)"/>
+    <!-- 肘关节 -->
+    <circle cx="152" cy="133" r="10" fill="var(--violet)"/>
+    <!-- 前臂 -->
+    <path d="M152 133 L 248 162 L 242 178 L 144 146 Z" fill="var(--ink2)"/>
+    <!-- 腕关节 -->
+    <circle cx="246" cy="170" r="9" fill="var(--blue)"/>
+    <!-- 端执行器（抽象抓取头） -->
+    <path d="M246 170 l28 -8 l6 10 l-28 10 Z" fill="var(--ink1)"/>
+    <path d="M280 160 l12 -6 l8 14 l-12 6 Z" fill="var(--ink1)"/>
+    <!-- 细节电缆 -->
+    <path d="M44 190 C 22 204, 6 220, -10 228" stroke="var(--violet)" stroke-width="2.4" opacity="0.55" fill="none" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- 抽象工程师（极简剪影 + 笔电） -->
+  <g transform="translate(1220,360)">
+    <!-- 身体 -->
+    <rect x="-70" y="40" width="64" height="140" rx="14" fill="var(--ink2)"/>
+    <!-- 头部 -->
+    <circle cx="-38" cy="16" r="22" fill="var(--ink3)"/>
+    <!-- 眼镜（简单线） -->
+    <g stroke="var(--ink4)" stroke-width="2" opacity="0.9">
+      <line x1="-52" y1="16" x2="-42" y2="16"/>
+      <line x1="-34" y1="16" x2="-24" y2="16"/>
+      <line x1="-42" y1="16" x2="-34" y2="16"/>
+    </g>
+    <!-- 手臂 -->
+    <path d="M-70 86 q 22 -10 38 6 q 10 10 20 8" stroke="var(--ink3)" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <!-- 笔电（几何） -->
+    <g transform="translate(-6,78)">
+      <rect x="-86" y="0" width="86" height="10" rx="2" fill="var(--ink1)"/>
+      <polygon points="-86,0 0,0 -8,-32 -94,-32" fill="var(--ink2)"/>
+      <line x1="-76" y1="-8" x2="-18" y2="-8" stroke="var(--blue-soft)" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- 数据流/信号（从笔电 & 机械臂射向产线） -->
+  <g stroke="url(#rail)" stroke-width="2.4" stroke-linecap="round" filter="url(#lineGlow)">
+    <path d="M1140 440 h60 a14 14 0 0 1 14 14 v16 h120" />
+    <path d="M780 330 h120 a16 16 0 0 1 16 16 v18 h140" />
+  </g>
+
+  <!-- 右上角系统标记（抽象图标） -->
+  <g transform="translate(1460,120)" filter="url(#softGlow)" opacity="0.9">
+    <circle cx="0" cy="0" r="8" fill="var(--green)"/>
+    <rect x="26" y="-8" width="16" height="16" rx="3.5" fill="var(--blue)"/>
+    <path d="M58 -6 L74 10 L58 10 Z" fill="var(--violet)"/>
+  </g>
+
+  <!-- 卡片感投影（如放在白色圆角容器里时可关闭） -->
+  <g opacity="0.0">
+    <rect x="40" y="40" width="1520" height="820" rx="28" fill="#000"/>
+  </g>
+</svg>

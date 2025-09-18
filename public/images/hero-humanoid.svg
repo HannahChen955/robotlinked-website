@@ -1,0 +1,142 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract humanoid robot with data flows">
+  <!-- ======== THEME (edit to match brand) ======== -->
+  <defs>
+    <style><![CDATA[
+      :root{
+        --blue:#2563EB;       /* 主蓝 text-blue-600 */
+        --blueSoft:#93C5FD;
+        --violet:#7C3AED;
+        --green:#10B981;
+        --ink1:#0F172A;       /* 深灰蓝（金属暗部） */
+        --ink2:#374151;       /* 中灰蓝 */
+        --ink3:#4B5563;       /* 浅灰蓝（金属亮部） */
+        --bgHi:#F3F4F6;       /* 背景上 */
+        --bgLo:#E5E7EB;       /* 背景下 */
+      }
+    ]]></style>
+
+    <!-- 背景渐变 + mesh -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="900">
+      <stop offset="0" stop-color="var(--bgHi)"/>
+      <stop offset="1" stop-color="var(--bgLo)"/>
+    </linearGradient>
+    <radialGradient id="mesh" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(1040 380) rotate(90) scale(560 860)">
+      <stop offset="0" stop-color="var(--violet)" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="var(--violet)" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 金属渐变 -->
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="var(--ink2)"/>
+      <stop offset="1" stop-color="var(--ink3)"/>
+    </linearGradient>
+
+    <!-- 数据线渐变 -->
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--blueSoft)"/>
+      <stop offset="1" stop-color="var(--blue)"/>
+    </linearGradient>
+
+    <!-- 柔光 -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- 线条发光 -->
+    <filter id="lineGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#mesh)"/>
+
+  <!-- 背景斜向纹理 / 灯带 -->
+  <g opacity="0.10">
+    <path d="M0 740 L1600 460" stroke="#E0E7FF" stroke-width="1"/>
+    <path d="M0 800 L1600 520" stroke="#E0E7FF" stroke-width="1"/>
+  </g>
+  <g stroke="#EEF2FF" stroke-width="10" opacity="0.7">
+    <line x1="840" y1="120" x2="1100" y2="180"/>
+    <line x1="1100" y1="180" x2="1360" y2="240"/>
+  </g>
+
+  <!-- 数据流线（左->右） -->
+  <g stroke="url(#wire)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#lineGlow)" opacity="0.95">
+    <path d="M120 510 H 400 a24 24 0 0 1 24 24 v18 H 640"/>
+    <path d="M120 560 H 440 a20 20 0 0 0 20 -20 v-18 H 700"/>
+    <path d="M120 610 H 500 a18 18 0 0 0 18 -18 v-16 H 760"/>
+  </g>
+
+  <!-- 地面投影带（加强承托感） -->
+  <rect x="220" y="680" width="1160" height="18" rx="9" fill="#D8E2FF" opacity="0.5"/>
+
+  <!-- ========= HUMANOID ROBOT (center-right) ========= -->
+  <g transform="translate(950,300)">
+    <!-- 头部 -->
+    <circle cx="0" cy="0" r="44" fill="url(#metal)"/>
+    <!-- 头部视觉条/传感器 -->
+    <rect x="-24" y="-4" width="48" height="8" rx="4" fill="var(--blue)"/>
+    <!-- 颈部 -->
+    <rect x="-10" y="36" width="20" height="26" rx="6" fill="var(--ink2)"/>
+
+    <!-- 胸甲 / 躯干 -->
+    <path d="M-70 60 h140 a26 26 0 0 1 26 26 v86 a34 34 0 0 1 -20 31 l-76 34 l-76 -34 a34 34 0 0 1 -20 -31 v-86 a26 26 0 0 1 26 -26z" fill="url(#metal)"/>
+    <!-- 胸前发光条 -->
+    <rect x="-42" y="98" width="84" height="8" rx="4" fill="var(--blueSoft)"/>
+
+    <!-- 左臂（下垂） -->
+    <g>
+      <circle cx="-92" cy="96" r="12" fill="var(--violet)"/> <!-- 肩关节 -->
+      <rect x="-104" y="102" width="24" height="88" rx="10" fill="url(#metal)"/>
+      <circle cx="-92" cy="194" r="10" fill="var(--blue)"/>  <!-- 肘关节 -->
+      <rect x="-104" y="200" width="24" height="70" rx="10" fill="url(#metal)"/>
+      <rect x="-104" y="270" width="28" height="16" rx="6" fill="var(--ink1)"/> <!-- 掌部 -->
+    </g>
+
+    <!-- 右臂（抬起交互） -->
+    <g>
+      <circle cx="92" cy="96" r="12" fill="var(--violet)"/>   <!-- 肩关节 -->
+      <!-- 上臂（斜上） -->
+      <path d="M92 108 L 164 78 L 172 92 L 100 122 Z" fill="url(#metal)"/>
+      <circle cx="168" cy="85" r="10" fill="var(--blue)"/>    <!-- 肘关节 -->
+      <!-- 前臂（指向前方） -->
+      <path d="M168 85 L 238 110 L 232 126 L 160 100 Z" fill="var(--ink3)"/>
+      <!-- 手掌/指尖 -->
+      <rect x="232" y="118" width="22" height="10" rx="3" fill="var(--ink1)"/>
+      <!-- 交互微粒 -->
+      <g filter="url(#softGlow)">
+        <circle cx="270" cy="100" r="4" fill="var(--green)"/>
+        <circle cx="292" cy="106" r="4" fill="var(--blue)"/>
+        <circle cx="312" cy="98"  r="4" fill="var(--violet)"/>
+      </g>
+    </g>
+
+    <!-- 腰部 -->
+    <rect x="-40" y="210" width="80" height="28" rx="10" fill="var(--ink2)"/>
+
+    <!-- 腿 -->
+    <g>
+      <!-- 左腿 -->
+      <rect x="-56" y="238" width="36" height="130" rx="14" fill="url(#metal)"/>
+      <rect x="-66" y="366" width="60" height="18" rx="8" fill="var(--ink1)"/>
+      <!-- 右腿 -->
+      <rect x="20" y="238" width="36" height="130" rx="14" fill="url(#metal)"/>
+      <rect x="10" y="366" width="60" height="18" rx="8" fill="var(--ink1)"/>
+    </g>
+  </g>
+
+  <!-- 右上角抽象模块图标 -->
+  <g transform="translate(1460,140)" filter="url(#softGlow)" opacity="0.9">
+    <circle cx="0" cy="0" r="8" fill="var(--green)"/>
+    <rect x="26" y="-8" width="16" height="16" rx="3.5" fill="var(--blue)"/>
+    <path d="M58 -6 L74 10 L58 10 Z" fill="var(--violet)"/>
+  </g>
+
+  <!-- 安全文案区（不可见，开发可删） -->
+  <rect x="180" y="200" width="560" height="320" rx="12" fill="#000" opacity="0"/>
+</svg>

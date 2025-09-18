@@ -1,0 +1,778 @@
+{
+  "common": {
+    "book_call": "Book a Consultation",
+    "email_service": "service@robotlinked.com",
+    "email_jason": "jason.zheng@robotlinked.com",
+    "learn_more": "Learn More",
+    "get_started": "Get Started",
+    "contact_us": "Contact Us",
+    "view_services": "View Services",
+    "copyright": "© {{year}} RobotLinked. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Get answers to common questions about our AI hardware and robotics manufacturing services",
+    "talent": {
+      "title": "Talent Services",
+      "q1": "How quickly can you deliver qualified candidates for AI hardware roles?",
+      "a1": "We deliver first candidate batch within 48 hours for most roles. Our extensive network in China's AI hardware ecosystem allows us to quickly identify and screen candidates with the right technical background and experience.",
+      "q2": "What types of roles do you typically fill for AI hardware companies?",
+      "a2": "We specialize in manufacturing, supply chain, and engineering roles including: Hardware Engineers, Manufacturing Engineers, Supply Chain Managers, Quality Engineers, Production Managers, and Procurement Specialists with AI/robotics experience.",
+      "q3": "Do you provide ongoing support after placement?",
+      "a3": "Yes, we provide 3-month placement guarantee and ongoing HR support to ensure successful integration. This includes performance check-ins, cultural adaptation support, and immediate replacement if needed.",
+      "q4": "How do you ensure candidates understand both AI technology and manufacturing?",
+      "a4": "Our candidates are pre-screened for both technical AI/robotics knowledge and hands-on manufacturing experience. We use competency frameworks specifically designed for AI hardware companies transitioning to mass production."
+    },
+    "solutions": {
+      "title": "Supply Chain Solutions",
+      "q1": "What's included in your production feasibility assessment?",
+      "a1": "Our 10-day assessment covers: component sourcing analysis, supplier capability evaluation, cost modeling, timeline projections, risk assessment, and detailed recommendations for pilot to mass production transition.",
+      "q2": "How do you help with component sourcing for AI hardware?",
+      "a2": "We leverage our supplier network to source critical components including chips, sensors, motors, and specialized parts. Our team provides supplier validation, cost negotiation, and quality assurance throughout the sourcing process.",
+      "q3": "What support do you provide during production ramp-up?",
+      "a3": "We provide on-site engineering support, production line optimization, quality control implementation, supplier relationship management, and real-time issue resolution during the critical ramp-up phase."
+    },
+    "general": {
+      "title": "General Questions",
+      "q1": "What's your recommended approach for AI hardware manufacturing strategy?",
+      "a1": "We recommend a strategic multi-region approach to minimize costs. China is ideal for the product development phase due to its rich supporting resources and ecosystem that enables rapid prototyping and iteration. Once the product is mature, companies can migrate production to other regions based on cost considerations, market access, or supply chain requirements. This phased approach optimizes both development speed and long-term manufacturing economics.",
+      "q2": "How do you handle cross-cultural and language barriers?",
+      "a2": "Our bilingual team bridges communication gaps with standardized processes, translated documentation, and cultural training. We ensure smooth coordination between global teams and local Chinese suppliers/partners.",
+      "q3": "What makes RobotLinked different from traditional consulting firms?",
+      "a3": "We specialize exclusively in AI hardware and robotics with deep China manufacturing expertise. Our combined talent + solutions approach ensures you build the right team while implementing proven manufacturing strategies.",
+      "q4": "Do you support manufacturing outside of China due to tariff concerns?",
+      "a4": "Yes, we can help navigate alternative manufacturing locations when tariffs or geopolitical factors are a concern. We identify suppliers with relevant capabilities in regions like Southeast Asia, India, or Mexico, and provide on-site resources to ensure quality and coordination. Our global network allows us to maintain the same level of manufacturing excellence regardless of location."
+    },
+    "contact": {
+      "title": "Still have questions?",
+      "description": "Our team is ready to provide personalized answers and solutions for your specific needs.",
+      "cta": "Contact Our Experts"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "core_services": "Core Services",
+    "talent": "Talent Services",
+    "solutions": "Solutions",
+    "clients": "Clients",
+    "advantages": "Our Advantages",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "resources": "Resources"
+  },
+  "home": {
+    "hero": {
+      "title": "Helping AI Hardware & Robotics Companies Scale Manufacturing in China+",
+      "subtitle": "Especially strong at helping AI-first teams bridge the hardware gap—plus consumer electronics and medical devices.",
+      "services_intro": "Two Core Services",
+      "service_talent": "Talent Services",
+      "service_talent_desc": "Build Teams in Target Regions",
+      "service_solutions": "Supply Chain Solutions",
+      "service_solutions_desc": "Pilot → Mass Production Ramp",
+      "cta_primary": "Get Assessment",
+      "cta_secondary": "Book Talent Consultation",
+      "badge": "Global Manufacturing Network Partner",
+      "tag1": "AI-first",
+      "tag2": "Robotics",
+      "tag3": "China+",
+      "benefit1": "15+ Years Multinational Experience",
+      "benefit2": "90-Day Team Building",
+      "benefit3": "End-to-End Support",
+      "benefit4": "Deep Local Resources",
+      "stat1": "Successful Projects Delivered",
+      "stat2": "Years Manufacturing Experience"
+    },
+    "outcomes": {
+      "title": "Delivery Outcomes",
+      "subtitle": "Results-driven approach with measurable metrics",
+      "metric1": "First Candidate Batch Delivery",
+      "metric1_desc": "Initial talent pipeline setup and screening",
+      "metric2": "Core Team Placement Completion",
+      "metric2_desc": "Full team recruitment and onboarding",
+      "metric3": "Production Feasibility Assessment",
+      "metric3_desc": "Technical and supply chain evaluation",
+      "weeks": "weeks",
+      "days": "days"
+    },
+    "services": {
+      "title": "Two Core Services",
+      "subtitle": "End-to-end China manufacturing solutions",
+      "talent_title": "Talent Services",
+      "talent_desc": "Build Teams Fast",
+      "talent_advantage1": "Industry-Driven Matching",
+      "talent_deliverable1": "Candidate shortlists with match insights",
+      "talent_detail1": "Skills, experience, risk assessment & rationale",
+      "talent_advantage2": "Rare Talent Access",
+      "talent_deliverable2": "Priority reach to passive & niche candidates",
+      "talent_detail2": "Direct access to hard-to-find talent with key references",
+      "talent_advantage3": "Organization-Ready Package",
+      "talent_deliverable3": "JD clarification, competency models, offers & 90-day onboarding",
+      "talent_detail3": "Complete hiring toolkit from role definition to onboarding",
+      "solutions_title": "Supply Chain Solutions",
+      "solutions_desc": "Pilot to Mass Production",
+      "solutions_advantage1": "Custom Project Roadmaps",
+      "solutions_deliverable1": "Milestones, responsibilities, risks & costs",
+      "solutions_detail1": "Tailored implementation plans with clear accountability",
+      "solutions_advantage2": "Cross-Border Coordination",
+      "solutions_deliverable2": "Bilingual support for docs, alignment & change control",
+      "solutions_detail2": "Seamless communication between global and local teams",
+      "solutions_advantage3": "Ramp-to-Mass Plan",
+      "solutions_deliverable3": "Supplier shortlists, ramp schedules, quality & delivery metrics",
+      "solutions_detail3": "Complete production scaling from pilot to volume"
+    },
+    "why_us": {
+      "title": "Why Choose Us",
+      "subtitle": "Six core advantages",
+      "expertise_title": "Deep Industry Expertise",
+      "expertise_desc": "15+ years multinational supply chain experience in AI hardware & robotics.",
+      "track_record_title": "Proven Track Record",
+      "track_record_desc": "Helped leading global companies establish China manufacturing, from startups to unicorns.",
+      "support_title": "End-to-End Support",
+      "support_desc": "Complete solutions from talent to production ramp.",
+      "cultural_title": "Cultural Bridge Advantage",
+      "cultural_desc": "Bridge international standards with China execution networks.",
+      "quality_title": "Quality Assurance System",
+      "quality_desc": "Complete quality systems ensuring international standards.",
+      "speed_title": "Rapid Delivery Capability",
+      "speed_desc": "Rich networks and proven processes reduce planning-to-production time."
+    },
+    "clients": {
+      "title": "Six Core Challenges We Solve",
+      "subtitle": "Whether you're a startup or an established company, these are the common hurdles in building teams and scaling manufacturing. We offer flexible solutions—from recruiting specific roles to providing comprehensive staffing and project outsourcing.",
+      "challenge1": {
+        "title": "First Steps: From AI to Hardware",
+        "problem": "AI-first teams lack supply chain and product development know-how.",
+        "solution": "Bring in skilled engineers (PM/ME/EE/PD etc.) to accelerate hardware development; Set up clear product development frameworks to align stages and ensure smooth handoff to production.",
+        "link": "See How We Solve This →"
+      },
+      "challenge2": {
+        "title": "Slow Hiring & Unclear Roles",
+        "problem": "Vague JDs and missing competency models slow hiring.",
+        "solution": "Clarify roles and deliver candidate shortlists to speed hiring; Provide organizational profiles and competency frameworks.",
+        "link": "See How We Solve This →"
+      },
+      "challenge3": {
+        "title": "Unstable Key Components",
+        "problem": "Motors, sensors, and core parts often lack validation, causing spec gaps and unstable yields.",
+        "solution": "Experienced SQE or sourcing experts to strengthen supplier control; Define specs early with structured validation plans to catch issues before production.",
+        "link": "See How We Solve This →"
+      },
+      "challenge4": {
+        "title": "Delayed Issue Resolution",
+        "problem": "Without on-site support, issues go unresolved; remote comms slow response.",
+        "solution": "Deploy on-site PMs/engineers to catch and push fixes; Run tight issue-tracking and feedback loops with clear ownership.",
+        "link": "See How We Solve This →"
+      },
+      "challenge5": {
+        "title": "Delivery & Cost Pressure",
+        "problem": "Tight deadlines and strict cost control put teams under strain.",
+        "solution": "Cost engineers or SCM managers to optimize sourcing and planning; Dashboards for cost and delivery transparency.",
+        "link": "See How We Solve This →"
+      },
+      "challenge6": {
+        "title": "Cross-Border & Compliance Risks",
+        "problem": "Cross-border teams face gaps in communication and local compliance.",
+        "solution": "Bilingual PMs/HR to bridge gaps; Compliance checklists and bilingual documentation kits.",
+        "link": "See How We Solve This →"
+      },
+      "problem_label": "The Challenge",
+      "solution_label": "Our Solution",
+      "tier1": "A/B Round Robotics & AI Hardware Startups",
+      "tier1_desc": "6-18 months to mass production, need rapid China manufacturing setup.",
+      "tier1_feature1": "Priority support & dedicated services",
+      "tier1_feature2": "End-to-end project management",
+      "tier1_feature3": "Risk control & quality assurance",
+      "tier2": "AI Server/Accelerator/Module Makers",
+      "tier2_desc": "Need rapid manufacturing expansion and reliable local partners.",
+      "tier2_feature1": "Supply chain optimization & cost control",
+      "tier2_feature2": "Capacity planning & expansion support",
+      "tier3": "Traditional Hardware Companies Launching AI/Robotics Lines",
+      "tier3_desc": "Traditional manufacturers entering emerging fields, need specialized team support.",
+      "tier3_feature1": "New business line incubation support",
+      "tier3_feature2": "Team training & capability building"
+    },
+    "process": {
+      "title": "Service Process",
+      "subtitle": "Standardized processes ensuring successful project delivery",
+      "talent_title": "Talent Service Process",
+      "solutions_title": "Solutions Process",
+      "talent_step1": "Role Clarification",
+      "talent_step1_title": "Requirements Analysis",
+      "talent_step2": "Candidate Pool",
+      "talent_step2_title": "Talent Search",
+      "talent_step3": "AI Matching",
+      "talent_step3_title": "Precise Matching",
+      "talent_step4": "Evaluation",
+      "talent_step4_title": "Interview Assessment",
+      "talent_step5": "Offer Negotiation",
+      "talent_step5_title": "Salary Negotiation",
+      "talent_step6": "Onboarding Support",
+      "talent_step6_title": "Onboarding Support",
+      "solutions_step1": "Pilot",
+      "solutions_step1_title": "Pilot Preparation",
+      "solutions_step2": "EVT",
+      "solutions_step2_title": "Engineering Validation",
+      "solutions_step3": "DVT",
+      "solutions_step3_title": "Design Validation",
+      "solutions_step4": "PVT",
+      "solutions_step4_title": "Production Validation",
+      "solutions_step5": "MP",
+      "solutions_step5_title": "Mass Production"
+    },
+    "cta": {
+      "title": "Ready to Start Your China Manufacturing Journey?",
+      "subtitle": "Build world-class manufacturing in China. Accelerate time-to-market.",
+      "button": "Book a 20-Minute Consultation",
+      "learn_more": "Learn More"
+    }
+  },
+  "talent": {
+    "title": "Specialized Headhunting for AI Hardware & Robotics",
+    "subtitle": "From prototyping to mass production, we connect you with China-based talent who meet global standards and execute locally",
+    "description": "Find talent who meet global standards and execute locally.",
+    "cta": {
+      "primary": "Book a Consultation",
+      "secondary": "Role Reference"
+    },
+    "pain_points": {
+      "title": "We Solve the Hardest Hiring Challenges",
+      "point1": {
+        "title": "Hard-to-Find Talent",
+        "desc": "We have industry experience and network, know talent and where to find them"
+      },
+      "point2": {
+        "title": "Urgent Needs",
+        "desc": "As fast as 48h candidate shortlist for critical roles"
+      },
+      "point3": {
+        "title": "Local Execution",
+        "desc": "Talent that bridges global HQ standards with China operations"
+      },
+      "point4": {
+        "title": "Risk Reduction",
+        "desc": "Thorough assessment and pre-screening through communication and network referrals for stable, motivated candidates"
+      }
+    },
+    "process_new": {
+      "title": "Our Process",
+      "step1": {
+        "title": "Role Clarification",
+        "desc": "Deep understanding of your team needs and culture"
+      },
+      "step2": {
+        "title": "AI + Candidate Pool Matching",
+        "desc": "Leverage AI for precise candidate matching"
+      },
+      "step3": {
+        "title": "Market Mapping & Reports",
+        "desc": "Detailed candidate assessment reports"
+      },
+      "step4": {
+        "title": "Offer Negotiation",
+        "desc": "Assist with compensation and terms"
+      },
+      "step5": {
+        "title": "30/60/90-Day Follow-up",
+        "desc": "Ensure smooth team integration"
+      }
+    },
+    "core_roles": {
+      "title": "What We Do Best",
+      "manufacturing": {
+        "title": "Manufacturing & NPI",
+        "roles": ["Process Engineer", "Structural Engineer", "Electronics Engineer", "TPM/EPM"]
+      },
+      "supply_chain": {
+        "title": "Supply Chain",
+        "roles": ["Supply Chain Manager", "Operations Manager", "Logistics Manager", "Cost Engineer"]
+      },
+      "quality": {
+        "title": "Quality & Test",
+        "roles": ["SQE", "Quality Manager", "TE Engineer", "Compliance Manager"]
+      },
+      "leadership": {
+        "title": "Leadership",
+        "roles": ["China GM", "Quality Director", "Operations Director", "PD/EE Director"]
+      }
+    },
+    "credibility": {
+      "title": "Trusted by AI-First Companies",
+      "metrics": {
+        "metric1": "48h shortlist delivery",
+        "metric2": "90% candidate retention after 1 year",
+        "metric3": "15+ years industry experience"
+      },
+      "team_desc": "Our consultants come from global hardware leaders and understand both AI and manufacturing."
+    },
+    "roles": {
+      "title": "Typical Roles",
+      "role1": "Head of Manufacturing (China)",
+      "role2": "Supply Chain Manager / Buyer",
+      "role3": "SQE / Quality Lead",
+      "role4": "NPI / ME / PE Engineers",
+      "role5": "Project Manager",
+      "role6": "CM Interface"
+    },
+    "process": {
+      "title": "Process",
+      "step1": {
+        "title": "Role Clarification",
+        "desc": "Deep understanding of your team needs and culture"
+      },
+      "step2": {
+        "title": "Candidate Pool + AI Matching",
+        "desc": "Leverage AI for precise candidate matching"
+      },
+      "step3": {
+        "title": "Summary & Evaluation",
+        "desc": "Detailed candidate assessment reports"
+      },
+      "step4": {
+        "title": "Offer Negotiation",
+        "desc": "Assist with compensation and terms"
+      },
+      "step5": {
+        "title": "30/60/90-Day Follow-up",
+        "desc": "Ensure smooth team integration"
+      }
+    },
+    "engagement": {
+      "title": "Flexible Engagement Models",
+      "model1": {
+        "title": "Success-Based",
+        "desc": "Pay upon hire",
+        "detail": "Ideal for single role hires"
+      },
+      "model2": {
+        "title": "Retainer",
+        "desc": "Dedicated recruiter, guaranteed pipeline",
+        "detail": "Best for ongoing hiring needs"
+      },
+      "model3": {
+        "title": "Project-Based",
+        "desc": "Customized for NPI build-out or expansion",
+        "detail": "Perfect for team scaling or NPI ramp"
+      }
+    },
+    "final_cta": {
+      "title": "Ready to Build Your Team?",
+      "primary_btn": "Book a Free Consultation",
+      "secondary_btn": "Download Sample Report"
+    }
+  },
+  "solutions": {
+    "title": "Your Trusted Supply Chain Partner in China",
+    "subtitle": "From prototype to mass production, we help hardware and AI teams build reliable supply chains, reduce delays, and ensure smooth delivery.",
+    "cta": {
+      "primary": "Book a Consultation"
+    },
+    "challenges": {
+      "title": "Common Challenges",
+      "challenge1": {
+        "title": "Limited Local Connections",
+        "desc": "hard to find the right factories, risk of overpaying"
+      },
+      "challenge2": {
+        "title": "Lack of Supply Chain Expertise",
+        "desc": "strong in R&D, but no control over production"
+      },
+      "challenge3": {
+        "title": "High Risk During Ramp-up",
+        "desc": "delays or rework can threaten funding timelines"
+      },
+      "challenge4": {
+        "title": "Communication Barriers",
+        "desc": "language, time zone, and cultural gaps create inefficiency"
+      },
+      "challenge5": {
+        "title": "Low Factory Priority",
+        "desc": "small orders often get sidelined"
+      },
+      "challenge6": {
+        "title": "Cost Pressure",
+        "desc": "weak bargaining power leads to price volatility"
+      }
+    },
+    "solutions_table": {
+      "title": "Our Solutions",
+      "problem_header": "Challenges",
+      "solution_header": "How We Solve Them",
+      "row1": {
+        "problem": "No supplier network",
+        "solution": "Curated factory shortlist and cost negotiation"
+      },
+      "row2": {
+        "problem": "No production know-how",
+        "solution": "On-site engineers to secure Golden Line & yield improvement"
+      },
+      "row3": {
+        "problem": "High ramp-up risk",
+        "solution": "Stage-by-stage quality checks and risk alerts"
+      },
+      "row4": {
+        "problem": "Communication gaps",
+        "solution": "Bilingual team bridging you and the factory"
+      },
+      "row5": {
+        "problem": "Low priority",
+        "solution": "We push factories to commit resources and stay on track"
+      },
+      "row6": {
+        "problem": "Unstable cost",
+        "solution": "Benchmark models to lock in fair pricing"
+      }
+    },
+    "process": {
+      "title": "How We Work",
+      "step1": {
+        "title": "Requirement Alignment",
+        "desc": "understand product & stage"
+      },
+      "step2": {
+        "title": "Supplier Selection",
+        "desc": "BOM review & factory shortlist"
+      },
+      "step3": {
+        "title": "Pilot Build",
+        "desc": "small-batch ramp-up and yield optimization"
+      },
+      "step4": {
+        "title": "Golden Line Setup",
+        "desc": "stabilize production line"
+      },
+      "step5": {
+        "title": "Mass Production",
+        "desc": "monitor cost, yield & delivery"
+      }
+    },
+    "advantages": {
+      "title": "Why Work With Us",
+      "adv1": {
+        "title": "Experienced Team",
+        "desc": "15+ years in manufacturing, with leadership roles at Foxconn, Flex, and top multinationals"
+      },
+      "adv2": {
+        "title": "Dual Perspective",
+        "desc": "first-hand experience from both brand-side supply chain management and factory operations"
+      },
+      "adv3": {
+        "title": "AI-Enabled",
+        "desc": "we leverage AI tools for supplier screening, data analysis, and yield tracking to boost efficiency"
+      },
+      "adv4": {
+        "title": "Your Local Partner",
+        "desc": "if you're not ready to set up a team in China, we act as your trusted on-the-ground partner to bridge HQ and factories"
+      }
+    }
+  },
+  "clients": {
+    "title": "Target Clients",
+    "subtitle": "Precisely serving three core customer segments",
+    "tier1": {
+      "title": "Tier 1 - Core",
+      "desc": "A/B Round Robotics & AI Hardware Startups",
+      "detail": "6-18 months to mass production window"
+    },
+    "tier2": {
+      "title": "Tier 2",
+      "desc": "AI Servers / Accelerator / Module Makers",
+      "detail": "Need rapid manufacturing expansion"
+    },
+    "tier3": {
+      "title": "Tier 3",
+      "desc": "Traditional Hardware Launching AI/Robotics Lines",
+      "detail": "Need specialized team support for new business"
+    },
+    "pain_points": {
+      "title": "Pain Points",
+      "point1": "Strong R&D, weak manufacturing",
+      "point2": "Limited China supply chain experience",
+      "point3": "Need global+local execution partner"
+    }
+  },
+  "advantages": {
+    "title": "Our Advantages",
+    "subtitle": "Five core competencies",
+    "adv1": {
+      "title": "Multinational Experience",
+      "desc": "15+ years at leading multinationals, familiar with global processes & standards"
+    },
+    "adv2": {
+      "title": "Local Network",
+      "desc": "Deep coverage of China factories, suppliers, labs, engineering teams"
+    },
+    "adv3": {
+      "title": "High Match Quality",
+      "desc": "Precise alignment between requirements and talent/solutions"
+    },
+    "adv4": {
+      "title": "Dual Approach",
+      "desc": "People + Solutions for comprehensive support"
+    },
+    "adv5": {
+      "title": "Focused Niche",
+      "desc": "AI Hardware × Robotics × China Manufacturing"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Connecting Global AI + Robotics Innovation with China's Manufacturing Power",
+    "description": "We help AI and robotics companies accelerate their China journey with the right teams, suppliers, and scalable solutions.",
+    "mission": {
+      "title": "Our Mission",
+      "desc": "We empower innovators to succeed in China by bridging global vision with local execution—building strong teams and reliable manufacturing networks."
+    },
+    "methodology": {
+      "title": "Our Methodology",
+      "people": {
+        "title": "People First",
+        "desc": "Build high-performing local teams with global experience."
+      },
+      "solutions": {
+        "title": "Solution Driven",
+        "desc": "Tailored supply chain and manufacturing support for each stage."
+      }
+    },
+    "capabilities": {
+      "title": "Our Capabilities",
+      "subtitle": "End-to-end China manufacturing solutions",
+      "cap1": {
+        "title": "Talent Services",
+        "desc": "Recruitment, executive search, and team building."
+      },
+      "cap2": {
+        "title": "Supply Chain Setup",
+        "desc": "Supplier sourcing, factory selection, and quality systems."
+      },
+      "cap3": {
+        "title": "Ramp & Scaling",
+        "desc": "From pilot runs to stable mass production."
+      },
+      "cap4": {
+        "title": "AI Tools",
+        "desc": "Knowledge base, automation, and data insights."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "intro": "15+ years in supply chain & manufacturing leadership.",
+      "experience": "Experience in Foxconn, Flex, and top multinational tech firms. Expertise bridging client-side and factory-side perspectives.",
+      "years": "Years Experience",
+      "projects": "Projects Delivered",
+      "clients": "Focus Areas"
+    },
+    "compliance": {
+      "title": "Our Compliance",
+      "data_security": "Data Security",
+      "data_desc": "Strict data protection protocols.",
+      "confidentiality": "Confidentiality",
+      "confidentiality_desc": "Full commitment to client privacy.",
+      "quality_standards": "Global Standards",
+      "quality_desc": "Alignment with international compliance systems."
+    },
+    "download_brochure": "Get Company Profile"
+  },
+  "advantages": {
+    "title": "Our Advantages",
+    "subtitle": "Six core competencies",
+    "adv1": {
+      "title": "Multinational Experience",
+      "desc": "15+ years in leading global companies, familiar with international standards."
+    },
+    "adv2": {
+      "title": "Local Network",
+      "desc": "Strong connections across factories, suppliers, and engineering teams in China."
+    },
+    "adv3": {
+      "title": "High Match Quality",
+      "desc": "Precise alignment between requirements and solutions."
+    },
+    "adv4": {
+      "title": "Dual Approach",
+      "desc": "Talent + Solutions, integrated support."
+    },
+    "adv5": {
+      "title": "Focused Niche",
+      "desc": "Dedicated to AI Hardware & Robotics in China."
+    },
+    "adv6": {
+      "title": "AI-Enhanced Efficiency",
+      "desc": "Leveraging AI to boost speed and accuracy."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's start the conversation",
+    "description": "Leave your details, we'll reply within 48 hours.",
+    "form": {
+      "company": "Company/Product",
+      "company_placeholder": "Enter company or product name",
+      "contact": "Contact Name",
+      "contact_placeholder": "Your name",
+      "position": "Role",
+      "position_placeholder": "Your position",
+      "email": "Email",
+      "email_placeholder": "your@email.com",
+      "stage": "Current Stage",
+      "stage_placeholder": "Select current stage",
+      "stage_idea": "Idea Stage",
+      "stage_prototype": "Prototype Development",
+      "stage_testing": "Testing & Validation",
+      "stage_scaling": "Scaling Production",
+      "stage_mass": "Mass Production",
+      "stage_discuss": "To Be Discussed",
+      "challenges": "Key Challenges",
+      "challenges_placeholder": "Describe your main challenges...",
+      "services": "Services Needed",
+      "services_placeholder": "Select services needed",
+      "services_talent": "Talent Services",
+      "services_solutions": "Supply Chain Solutions",
+      "services_both": "Both",
+      "services_discuss": "To Be Discussed",
+      "timeline": "Timeline",
+      "timeline_placeholder": "Select timeline",
+      "timeline_urgent": "Urgent (< 1 month)",
+      "timeline_1_3": "1-3 months",
+      "timeline_3_6": "3-6 months",
+      "timeline_6_plus": "6+ months",
+      "timeline_discuss": "To Be Discussed",
+      "budget": "Budget Range",
+      "budget_placeholder": "Select budget range",
+      "budget_10k": "< $10k",
+      "budget_10_50k": "$10k - $50k",
+      "budget_50_100k": "$50k - $100k",
+      "budget_100k_plus": "$100k+",
+      "budget_discuss": "To Be Discussed",
+      "team_size": "Team Size",
+      "team_size_placeholder": "Select team size",
+      "team_size_1_10": "1-10 people",
+      "team_size_11_50": "11-50 people",
+      "team_size_51_200": "51-200 people",
+      "team_size_200_plus": "200+ people",
+      "team_size_discuss": "To Be Discussed",
+      "location": "Location",
+      "location_placeholder": "Your location",
+      "submit": "Submit Inquiry",
+      "submitting": "Submitting..."
+    },
+    "direct": {
+      "title": "Direct Contact",
+      "email": "Email",
+      "service_email": "service@robotlinked.com",
+      "jason_email": "jason.zheng@robotlinked.com",
+      "general": "General Inquiries",
+      "founder": "Co-Founder",
+      "response_time": "Response Time",
+      "response_promise": "We respond within 48 hours"
+    },
+    "success": {
+      "title": "Submission Successful!",
+      "message": "We've received your inquiry and will respond within 48 hours.",
+      "new_inquiry": "Submit New Inquiry"
+    }
+  },
+  "resources": {
+    "title": "Resources",
+    "subtitle": "Industry insights and practical tools",
+    "whitepaper": {
+      "title": "China Ramp Guide for AI Robotics",
+      "desc": "Key steps to establish manufacturing capabilities in China",
+      "status": "Coming Soon"
+    },
+    "checklist": {
+      "title": "EVT/DVT/PVT Checklist",
+      "desc": "Key checkpoints and best practices for each stage",
+      "status": "Coming Soon"
+    },
+    "events": {
+      "title": "Event Directory",
+      "desc": "CES, ICRA, SEMICON, Automatica and more",
+      "status": "Coming Soon"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "We value and protect your personal privacy",
+    "collection": {
+      "title": "Information Collection",
+      "content": "We only collect information necessary to provide our services, including company information, contact details, and business requirements you provide in contact forms. We do not collect your sensitive personal information unless you voluntarily provide it and our services require it."
+    },
+    "usage": {
+      "title": "Information Usage",
+      "content": "We use the collected information to: (1) respond to your inquiries and provide professional services; (2) improve our service quality; (3) send relevant industry information and service updates (with your consent). We do not use your information for other commercial purposes."
+    },
+    "protection": {
+      "title": "Information Protection",
+      "content": "We employ industry-standard security measures to protect your personal information, including encrypted transmission, access controls, and regular security reviews. We limit access to your personal information to employees who need to know."
+    },
+    "sharing": {
+      "title": "Information Sharing",
+      "content": "We do not sell, trade, or transfer your personal information to third parties. We may share necessary information with trusted service providers, but only as required to provide services, and they commit to protecting your information security."
+    },
+    "cookies": {
+      "title": "Cookie Usage",
+      "content": "Our website uses cookies to improve user experience, including remembering your language preferences and analyzing website usage. You can control cookie usage through your browser settings."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "content": "You have the right to request access, correction, or deletion of your personal information we hold. You may also request restrictions on or object to certain data processing activities. To exercise these rights, please contact us using the information below."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about this privacy policy or need assistance, please contact us:",
+      "address": "Shenzhen, Guangdong, China"
+    },
+    "updated": "Last Updated"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "subtitle": "Please read the following terms and conditions carefully",
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "content": "By accessing and using our website and services, you agree to comply with these terms of service. If you do not agree to these terms, please do not use our services. We reserve the right to modify these terms at any time."
+    },
+    "services": {
+      "title": "Service Description",
+      "content": "RobotLinked provides professional consulting services for AI hardware and robotics companies' manufacturing implementation, including talent services and solution services. Our service scope includes team building, supply chain management, manufacturing consulting, and other professional services."
+    },
+    "obligations": {
+      "title": "User Obligations",
+      "content": "You agree to: (1) provide truthful and accurate information; (2) not abuse our services; (3) comply with applicable laws and regulations; (4) respect our intellectual property; (5) not engage in any activities that may harm our services or reputation."
+    },
+    "ip": {
+      "title": "Intellectual Property",
+      "content": "All content on our website, including text, images, logos, designs, etc., is protected by intellectual property laws. Without our explicit written permission, you may not copy, distribute, or otherwise use this content."
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "To the maximum extent permitted by law, we are not liable for any direct, indirect, incidental, or consequential damages arising from the use of our services. Our total liability shall not exceed the fees you paid for the relevant services."
+    },
+    "termination": {
+      "title": "Service Termination",
+      "content": "We reserve the right to suspend or terminate your use of our services at any time, especially if you violate these terms. After service termination, certain parts of the relevant terms will continue to be effective."
+    },
+    "law": {
+      "title": "Governing Law",
+      "content": "These terms are governed by the laws of the People's Republic of China. Any disputes arising from these terms should first be resolved through friendly consultation. If consultation fails, they shall be submitted to the competent people's court in Shenzhen."
+    },
+    "changes": {
+      "title": "Terms Changes",
+      "content": "We may periodically update these terms of service. Significant changes will be notified through website announcements or other appropriate means. Continued use of our services indicates your acceptance of the revised terms."
+    },
+    "contact": {
+      "title": "Contact Information",
+      "content": "If you have any questions about these terms of service, please contact us:",
+      "address": "Shenzhen, Guangdong, China"
+    },
+    "updated": "Last Updated"
+  },
+  "404": {
+    "title": "Page Not Found",
+    "message": "Sorry, the page you're looking for doesn't exist.",
+    "back_home": "Back to Home"
+  }
+}
