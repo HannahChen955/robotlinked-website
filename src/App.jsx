@@ -15,6 +15,8 @@ import FAQ from './pages/FAQ';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import NotFound from './pages/NotFound';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 // Loading component
 const LoadingSpinner = () => (
@@ -36,6 +38,8 @@ function App() {
               <Route path="/talent" element={<TalentServices />} />
               <Route path="/solutions" element={<SolutionServices />} />
               <Route path="/about" element={<About />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/privacy" element={<Privacy />} />

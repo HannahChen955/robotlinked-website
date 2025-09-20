@@ -73,4 +73,29 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.robotlinked.com/en/faq" />
   </url>
 
+  <!-- Blog -->
+  <url>
+    <loc>https://www.robotlinked.com/blog</loc>
+    <lastmod>2024-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.robotlinked.com/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotlinked.com/en/blog" />
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://www.robotlinked.com/blog/founder-statement-zh</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.robotlinked.com/blog/founder-statement-en</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

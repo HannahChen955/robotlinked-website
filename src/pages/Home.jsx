@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Users, Zap, Clock, Award, Globe, Shield, Settings, Cog, Target, ExternalLink } from 'lucide-react';
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="min-h-screen">
@@ -85,13 +85,20 @@ const Home = () => {
               </div>
 
               {/* CTAs */}
-              <div className="flex justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-start">
                 <Link
                   to="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 shadow-lg"
                 >
                   {t('home.hero.cta_primary')}
                   <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
+                <Link
+                  to={`/blog/founder-statement-${i18n.language === 'zh' ? 'zh' : 'en'}`}
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-all border border-gray-200 hover:border-gray-300"
+                >
+                  {i18n.language === 'zh' ? '创始人主张' : 'Founder\'s Statement'}
+                  <ExternalLink className="ml-2 w-5 h-5" />
                 </Link>
               </div>
             </div>
