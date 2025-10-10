@@ -7,57 +7,68 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Enhanced with better layout */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 py-24 px-4 sm:px-6 lg:px-8">
-        <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] -z-10"></div>
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Content */}
+      {/* Hero Section - Full Background Image */}
+      <section className="relative overflow-hidden min-h-[600px] sm:min-h-[700px] py-24 px-4 sm:px-6 lg:px-8 animate-fade-in">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/hero-main.png"
+            alt="AI Hardware & Robotics Manufacturing"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          {/* Enhanced Gradient Overlay for better contrast */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 from-25% via-slate-900/50 via-60% to-transparent to-70%"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="max-w-3xl">
+            {/* Content */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full text-blue-800 text-sm font-medium">
+                <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium border border-white/30">
                   <Globe className="w-4 h-4" />
                   {t('home.hero.badge')}
                 </div>
 
                 {/* AI/Robotics Tags */}
                 <div className="flex flex-wrap gap-2">
-                  <span className="inline-flex items-center px-3 py-1 bg-purple-100 text-purple-700 text-sm font-medium rounded-full border border-purple-200">
+                  <span className="inline-flex items-center px-3 py-1 bg-purple-500/20 backdrop-blur-sm text-purple-200 text-sm font-medium rounded-full border border-purple-400/30">
                     {t('home.hero.tag1')}
                   </span>
-                  <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  <span className="inline-flex items-center px-3 py-1 bg-blue-500/20 backdrop-blur-sm text-blue-200 text-sm font-medium rounded-full border border-blue-400/30">
                     {t('home.hero.tag2')}
                   </span>
-                  <span className="inline-flex items-center px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full border border-green-200">
+                  <span className="inline-flex items-center px-3 py-1 bg-green-500/20 backdrop-blur-sm text-green-200 text-sm font-medium rounded-full border border-green-400/30">
                     {t('home.hero.tag3')}
                   </span>
                 </div>
 
                 <div className="space-y-4">
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
                     {t('home.hero.title')}
                   </h1>
-                  <p className="text-lg text-gray-600 leading-relaxed">
+                  <p className="text-lg text-gray-100 leading-relaxed drop-shadow-md">
                     {t('home.hero.subtitle')}
                   </p>
                 </div>
 
                 {/* Two Core Services - Restructured */}
                 <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-gray-900">
+                  <h3 className="text-xl font-semibold text-white drop-shadow-md">
                     {t('home.hero.services_intro')}
                   </h3>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-gray-700 leading-relaxed">
-                        <span className="font-semibold text-gray-900">{t('home.hero.service_talent')}</span>：{t('home.hero.service_talent_desc')}
+                      <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-gray-100 leading-relaxed drop-shadow-sm">
+                        <span className="font-semibold text-white">{t('home.hero.service_talent')}</span>：{t('home.hero.service_talent_desc')}
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-gray-700 leading-relaxed">
-                        <span className="font-semibold text-gray-900">{t('home.hero.service_solutions')}</span>：{t('home.hero.service_solutions_desc')}
+                      <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-gray-100 leading-relaxed drop-shadow-sm">
+                        <span className="font-semibold text-white">{t('home.hero.service_solutions')}</span>：{t('home.hero.service_solutions_desc')}
                       </p>
                     </div>
                   </div>
@@ -66,62 +77,42 @@ const Home = () => {
 
               {/* Key Benefits */}
               <div className="grid sm:grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  <span className="text-sm font-medium text-gray-700">{t('home.hero.benefit1')}</span>
+                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
+                  <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                  <span className="text-sm font-medium text-white">{t('home.hero.benefit1')}</span>
                 </div>
-                <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
-                  <Clock className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-sm font-medium text-gray-700">{t('home.hero.benefit2')}</span>
+                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
+                  <Clock className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                  <span className="text-sm font-medium text-white">{t('home.hero.benefit2')}</span>
                 </div>
-                <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
-                  <Award className="w-5 h-5 text-purple-600 flex-shrink-0" />
-                  <span className="text-sm font-medium text-gray-700">{t('home.hero.benefit3')}</span>
+                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
+                  <Award className="w-5 h-5 text-purple-400 flex-shrink-0" />
+                  <span className="text-sm font-medium text-white">{t('home.hero.benefit3')}</span>
                 </div>
-                <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
-                  <Shield className="w-5 h-5 text-orange-600 flex-shrink-0" />
-                  <span className="text-sm font-medium text-gray-700">{t('home.hero.benefit4')}</span>
+                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
+                  <Shield className="w-5 h-5 text-orange-400 flex-shrink-0" />
+                  <span className="text-sm font-medium text-white">{t('home.hero.benefit4')}</span>
                 </div>
               </div>
 
-              {/* CTAs */}
+              {/* CTAs - Enhanced hierarchy */}
               <div className="flex flex-col sm:flex-row gap-4 justify-start">
+                {/* Primary CTA - More prominent */}
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 shadow-lg"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   {t('home.hero.cta_primary')}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
+                {/* Secondary CTA - Outline style */}
                 <Link
                   to={`/blog/founder-statement-${i18n.language === 'zh' ? 'zh' : 'en'}`}
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-all border border-gray-200 hover:border-gray-300"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-semibold rounded-xl hover:bg-white/10 transition-all border-2 border-gray-300 hover:border-white"
                 >
                   {i18n.language === 'zh' ? '创始人主张' : 'Founder\'s Statement'}
                   <ExternalLink className="ml-2 w-5 h-5" />
                 </Link>
-              </div>
-            </div>
-
-            {/* Right Column - Hero Image */}
-            <div className="relative">
-              <div className="aspect-[16/9] rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
-                <img
-                  src="/images/hero-humanoid.svg"
-                  alt="Abstract humanoid robot with data flows"
-                  className="w-full h-full object-cover"
-                  loading="eager"
-                />
-              </div>
-
-              {/* Image Tags Overlay */}
-              <div className="absolute top-4 right-4 flex gap-2">
-                <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-purple-700 border border-purple-200">
-                  AI-first
-                </span>
-                <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-blue-700 border border-blue-200">
-                  Robotics
-                </span>
               </div>
             </div>
           </div>
