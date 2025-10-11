@@ -16,15 +16,11 @@ const Blog = () => {
     const fetchPosts = async () => {
       setLoading(true);
       const allPosts = await getAllPosts();
-      // 根据当前语言过滤文章（暂时只显示中文文章和创始人主张）
+      // 根据当前语言过滤文章
       const filteredByLang = allPosts.filter(post => {
-        // 创始人主张根据语言显示不同版本
-        if (post.isFounderStatement) {
-          return (i18n.language === 'zh' && post.language === 'zh') ||
-                 (i18n.language === 'en' && post.language === 'en');
-        }
-        // 其他文章暂时都显示
-        return !post.language || post.language === 'zh';
+        // 所有文章都根据语言显示对应版本
+        return (i18n.language === 'zh' && post.language === 'zh') ||
+               (i18n.language === 'en' && post.language === 'en');
       });
       setPosts(filteredByLang);
       setLoading(false);

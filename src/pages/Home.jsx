@@ -3,115 +3,65 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Users, Zap, Clock, Award, Globe, Shield, Settings, Cog, Target, ExternalLink } from 'lucide-react';
 
 const Home = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Full Background Image */}
-      <section className="relative overflow-hidden min-h-[600px] sm:min-h-[700px] py-24 px-4 sm:px-6 lg:px-8 animate-fade-in">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+      {/* Hero Section - Gradient Background with Illustration */}
+      <section className="relative overflow-hidden py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F9FAFB] to-[#EEF2FF] animate-fade-in">
+        {/* Hero Illustration on the right side */}
+        <div className="absolute right-0 top-0 w-1/2 h-full opacity-40 pointer-events-none hidden lg:block">
           <img
-            src="/images/hero-main.png"
-            alt="AI Hardware & Robotics Manufacturing"
-            className="w-full h-full object-cover"
+            src={`/images/home-hero.png?v=${Date.now()}`}
+            alt="AI to Hardware Flow Visualization"
+            className="w-full h-full object-contain"
             loading="eager"
           />
-          {/* Enhanced Gradient Overlay for better contrast */}
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 from-25% via-slate-900/50 via-60% to-transparent to-70%"></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl">
             {/* Content */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium border border-white/30">
-                  <Globe className="w-4 h-4" />
-                  {t('home.hero.badge')}
-                </div>
-
-                {/* AI/Robotics Tags */}
-                <div className="flex flex-wrap gap-2">
-                  <span className="inline-flex items-center px-3 py-1 bg-purple-500/20 backdrop-blur-sm text-purple-200 text-sm font-medium rounded-full border border-purple-400/30">
+                {/* AI/Robotics Tags - lighter pill style */}
+                <div className="flex flex-wrap gap-3">
+                  <span className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-600 text-sm font-medium rounded-full border border-blue-200">
                     {t('home.hero.tag1')}
                   </span>
-                  <span className="inline-flex items-center px-3 py-1 bg-blue-500/20 backdrop-blur-sm text-blue-200 text-sm font-medium rounded-full border border-blue-400/30">
+                  <span className="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-600 text-sm font-medium rounded-full border border-purple-200">
                     {t('home.hero.tag2')}
                   </span>
-                  <span className="inline-flex items-center px-3 py-1 bg-green-500/20 backdrop-blur-sm text-green-200 text-sm font-medium rounded-full border border-green-400/30">
+                  <span className="inline-flex items-center px-4 py-2 bg-emerald-100 text-emerald-600 text-sm font-medium rounded-full border border-emerald-200">
                     {t('home.hero.tag3')}
                   </span>
                 </div>
 
-                <div className="space-y-4">
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
+                <div className="space-y-6">
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                     {t('home.hero.title')}
                   </h1>
-                  <p className="text-lg text-gray-100 leading-relaxed drop-shadow-md">
+                  <p className="text-xl text-gray-600 leading-relaxed">
                     {t('home.hero.subtitle')}
                   </p>
                 </div>
-
-                {/* Two Core Services - Restructured */}
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-white drop-shadow-md">
-                    {t('home.hero.services_intro')}
-                  </h3>
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-gray-100 leading-relaxed drop-shadow-sm">
-                        <span className="font-semibold text-white">{t('home.hero.service_talent')}</span>：{t('home.hero.service_talent_desc')}
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-gray-100 leading-relaxed drop-shadow-sm">
-                        <span className="font-semibold text-white">{t('home.hero.service_solutions')}</span>：{t('home.hero.service_solutions_desc')}
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
 
-              {/* Key Benefits */}
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
-                  <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
-                  <span className="text-sm font-medium text-white">{t('home.hero.benefit1')}</span>
-                </div>
-                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
-                  <Clock className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                  <span className="text-sm font-medium text-white">{t('home.hero.benefit2')}</span>
-                </div>
-                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
-                  <Award className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                  <span className="text-sm font-medium text-white">{t('home.hero.benefit3')}</span>
-                </div>
-                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20">
-                  <Shield className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                  <span className="text-sm font-medium text-white">{t('home.hero.benefit4')}</span>
-                </div>
-              </div>
-
-              {/* CTAs - Enhanced hierarchy */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-start">
-                {/* Primary CTA - More prominent */}
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all hover:scale-105 shadow-lg"
                 >
                   {t('home.hero.cta_primary')}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
-                {/* Secondary CTA - Outline style */}
                 <Link
-                  to={`/blog/founder-statement-${i18n.language === 'zh' ? 'zh' : 'en'}`}
-                  className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-semibold rounded-xl hover:bg-white/10 transition-all border-2 border-gray-300 hover:border-white"
+                  to="/about"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-xl hover:bg-gray-50 transition-all border-2 border-gray-200 hover:border-gray-300"
                 >
-                  {i18n.language === 'zh' ? '创始人主张' : 'Founder\'s Statement'}
-                  <ExternalLink className="ml-2 w-5 h-5" />
+                  {t('home.hero.cta_secondary')}
+                  <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </div>
             </div>
@@ -163,6 +113,10 @@ const Home = () => {
                     </h3>
                     <p className="text-lg text-gray-700 font-medium">
                       {t('home.services.talent_desc')}
+                    </p>
+                    {/* AI-Native Summary */}
+                    <p className="text-sm text-blue-700 mt-3 italic border-l-4 border-blue-500 pl-3">
+                      {t('home.services.talent_summary')}
                     </p>
                   </div>
 
@@ -240,6 +194,10 @@ const Home = () => {
                     <p className="text-lg text-gray-700 font-medium">
                       {t('home.services.solutions_desc')}
                     </p>
+                    {/* AI-Native Summary */}
+                    <p className="text-sm text-purple-700 mt-3 italic border-l-4 border-purple-500 pl-3">
+                      {t('home.services.solutions_summary')}
+                    </p>
                   </div>
 
                   {/* Service Advantages & Deliverables */}
@@ -287,6 +245,61 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Why AI-First Teams Choose RobotLinked */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              {t('home.why_ai_first.title')}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              {t('home.why_ai_first.subtitle')}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Column 1: Bilingual Execution Layer */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-blue-100">
+              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6">
+                <Globe className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                {t('home.why_ai_first.column1_title')}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {t('home.why_ai_first.column1_desc')}
+              </p>
+            </div>
+
+            {/* Column 2: AI-Native Collaboration */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-purple-100">
+              <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6">
+                <Zap className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                {t('home.why_ai_first.column2_title')}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {t('home.why_ai_first.column2_desc')}
+              </p>
+            </div>
+
+            {/* Column 3: China+ Manufacturing Network */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-pink-100">
+              <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center mb-6">
+                <Settings className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                {t('home.why_ai_first.column3_title')}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {t('home.why_ai_first.column3_desc')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Five Key Challenges We Solve */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
@@ -320,6 +333,10 @@ const Home = () => {
                 </h3>
               </div>
               <div className="space-y-4">
+                {/* Trigger Phrase */}
+                <div className="bg-purple-50 border-l-4 border-purple-500 p-3 rounded-r-lg">
+                  <p className="text-sm text-purple-900 italic">{t('home.clients.challenge1.trigger')}</p>
+                </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium mb-2">{t('home.clients.problem_label')}</p>
                   <p className="text-sm text-gray-600">{t('home.clients.challenge1.problem')}</p>
@@ -351,6 +368,10 @@ const Home = () => {
                 </h3>
               </div>
               <div className="space-y-4">
+                {/* Trigger Phrase */}
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                  <p className="text-sm text-blue-900 italic">{t('home.clients.challenge2.trigger')}</p>
+                </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium mb-2">{t('home.clients.problem_label')}</p>
                   <p className="text-sm text-gray-600">{t('home.clients.challenge2.problem')}</p>
@@ -382,6 +403,10 @@ const Home = () => {
                 </h3>
               </div>
               <div className="space-y-4">
+                {/* Trigger Phrase */}
+                <div className="bg-orange-50 border-l-4 border-orange-500 p-3 rounded-r-lg">
+                  <p className="text-sm text-orange-900 italic">{t('home.clients.challenge3.trigger')}</p>
+                </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium mb-2">{t('home.clients.problem_label')}</p>
                   <p className="text-sm text-gray-600">{t('home.clients.challenge3.problem')}</p>
@@ -413,6 +438,10 @@ const Home = () => {
                 </h3>
               </div>
               <div className="space-y-4">
+                {/* Trigger Phrase */}
+                <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded-r-lg">
+                  <p className="text-sm text-green-900 italic">{t('home.clients.challenge4.trigger')}</p>
+                </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium mb-2">{t('home.clients.problem_label')}</p>
                   <p className="text-sm text-gray-600">{t('home.clients.challenge4.problem')}</p>
@@ -444,6 +473,10 @@ const Home = () => {
                 </h3>
               </div>
               <div className="space-y-4">
+                {/* Trigger Phrase */}
+                <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded-r-lg">
+                  <p className="text-sm text-red-900 italic">{t('home.clients.challenge5.trigger')}</p>
+                </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium mb-2">{t('home.clients.problem_label')}</p>
                   <p className="text-sm text-gray-600">{t('home.clients.challenge5.problem')}</p>
@@ -475,6 +508,10 @@ const Home = () => {
                 </h3>
               </div>
               <div className="space-y-4">
+                {/* Trigger Phrase */}
+                <div className="bg-indigo-50 border-l-4 border-indigo-500 p-3 rounded-r-lg">
+                  <p className="text-sm text-indigo-900 italic">{t('home.clients.challenge6.trigger')}</p>
+                </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium mb-2">{t('home.clients.problem_label')}</p>
                   <p className="text-sm text-gray-600">{t('home.clients.challenge6.problem')}</p>
@@ -508,6 +545,15 @@ const Home = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               {t('home.outcomes.subtitle')}
             </p>
+            {/* Methodology Explanation */}
+            <div className="mt-8 max-w-2xl mx-auto bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-xl p-6">
+              <p className="text-base font-semibold text-gray-900 mb-2">
+                {t('home.outcomes.methodology_title')}
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {t('home.outcomes.methodology_desc')}
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">

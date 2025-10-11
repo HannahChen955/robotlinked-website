@@ -1,6 +1,28 @@
 // 博客文章元数据
 const blogPostsMetadata = [
   {
+    slug: 'ai-native-supply-chain-zh',
+    title: '我们的核心竞争力：以轻量化结构与 AI 驱动的团队，赋能全球硬件创新',
+    date: '2024-12-15',
+    author: 'RobotLinked Team',
+    summary: '揭示 RobotLinked 如何通过轻量化团队结构、AI-Native 文化和深厚的供应链经验，成为 AI 硬件团队最信赖的制造合作伙伴。',
+    tags: ['团队优势', 'AI-Native', '供应链', '硬件创新'],
+    readingTime: '10 min read',
+    isFounderStatement: false,
+    language: 'zh'
+  },
+  {
+    slug: 'ai-native-supply-chain-en',
+    title: 'Our Core Advantage: A Lightweight, AI-Native Team Empowering Global Hardware Innovation',
+    date: '2024-12-15',
+    author: 'RobotLinked Team',
+    summary: 'How RobotLinked helps AI-first teams bridge the gap between software and manufacturing through lightweight structure, AI-native culture, and deep supply chain expertise.',
+    tags: ['Team Advantage', 'AI-Native', 'Supply Chain', 'Hardware Innovation'],
+    readingTime: '10 min read',
+    isFounderStatement: false,
+    language: 'en'
+  },
+  {
     slug: 'founder-statement-zh',
     title: '创始人主张',
     date: '2024-12-01',

@@ -16,6 +16,11 @@ const About = () => {
       title: t('about.methodology.solutions.title'),
       desc: t('about.methodology.solutions.desc'),
     },
+    {
+      icon: Bot,
+      title: t('about.methodology.ai_workflow.title'),
+      desc: t('about.methodology.ai_workflow.desc'),
+    },
   ];
 
   const advantages = [
@@ -100,7 +105,7 @@ const About = () => {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
                 <img
-                  src="/images/about-hero.svg"
+                  src="/images/about-hero.png"
                   alt="AI and Robotics Manufacturing Network"
                   className="w-full h-full object-cover"
                   loading="eager"
@@ -118,9 +123,15 @@ const About = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               {t('about.methodology.title')}
             </h2>
+            {t('about.methodology.subtitle') && (
+              <p className="text-xl text-gray-600 mb-4">{t('about.methodology.subtitle')}</p>
+            )}
+            {t('about.methodology.intro') && (
+              <p className="text-lg text-gray-700 max-w-3xl mx-auto">{t('about.methodology.intro')}</p>
+            )}
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {methodology.map((method, index) => {
               const Icon = method.icon;
               return (

@@ -31,40 +31,8 @@ const SolutionServices = () => {
         </div>
       </section>
 
-      {/* Customer Challenges Section */}
+      {/* Solutions Cards Section - Challenge + Solution Pairs */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              {t('solutions.challenges.title')}
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3, 4, 5, 6].map((num) => (
-              <div key={num} className="bg-red-50 p-6 rounded-2xl border border-red-100 hover:border-red-300 transition-all">
-                <div className="p-3 bg-red-100 rounded-xl w-fit mb-4">
-                  {num === 1 && <Users className="w-8 h-8 text-red-600" />}
-                  {num === 2 && <Target className="w-8 h-8 text-red-600" />}
-                  {num === 3 && <AlertTriangle className="w-8 h-8 text-red-600" />}
-                  {num === 4 && <Shield className="w-8 h-8 text-red-600" />}
-                  {num === 5 && <TrendingUp className="w-8 h-8 text-red-600" />}
-                  {num === 6 && <DollarSign className="w-8 h-8 text-red-600" />}
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {t(`solutions.challenges.challenge${num}.title`)}
-                </h3>
-                <p className="text-sm text-gray-600">
-                  {t(`solutions.challenges.challenge${num}.desc`)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Solutions Cards Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -74,7 +42,7 @@ const SolutionServices = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[1, 2, 3, 4, 5, 6].map((num) => (
-              <div key={num} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all">
+              <div key={num} className="bg-white p-6 rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-lg transition-all">
                 {/* Problem Section */}
                 <div className="mb-4">
                   <div className="flex items-center mb-3">
@@ -114,7 +82,7 @@ const SolutionServices = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -148,7 +116,7 @@ const SolutionServices = () => {
       </section>
 
       {/* Advantages Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -156,14 +124,14 @@ const SolutionServices = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[1, 2, 3, 4].map((num) => (
-              <div key={num} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-purple-200 transition-all">
-                <div className="p-3 bg-purple-100 rounded-xl w-fit mb-6">
-                  {num === 1 && <Users className="w-8 h-8 text-purple-600" />}
-                  {num === 2 && <Target className="w-8 h-8 text-purple-600" />}
-                  {num === 3 && <Zap className="w-8 h-8 text-purple-600" />}
-                  {num === 4 && <CheckCircle className="w-8 h-8 text-purple-600" />}
+              <div key={num} className="bg-white p-6 rounded-2xl border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all text-center">
+                <div className="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                  {num === 1 && <Users className="w-7 h-7 text-purple-600" />}
+                  {num === 2 && <Target className="w-7 h-7 text-purple-600" />}
+                  {num === 3 && <Zap className="w-7 h-7 text-purple-600" />}
+                  {num === 4 && <CheckCircle className="w-7 h-7 text-purple-600" />}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   {t(`solutions.advantages.adv${num}.title`)}
